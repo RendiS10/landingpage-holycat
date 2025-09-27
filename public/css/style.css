@@ -1,0 +1,211 @@
+/* Full page wrapper */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #43e97b, #fffacd, #9be15d, #fff);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  color: #2f4f4f;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animasi background */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Logo */
+.logo-main {
+  max-width: 350px;
+  width: 80%;
+  margin-bottom: 15px;
+  animation: zoomIn 2s ease;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Judul */
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 8px 0;
+  color: #006400;
+  animation: fadeInDown 2s ease;
+  letter-spacing: 1px;
+}
+
+@keyframes fadeInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Typewriter effect */
+.lead {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  border-right: 2px solid rgba(0, 100, 0, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3.5s steps(40, end) forwards, blink 0.75s step-end infinite;
+  color: #333;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #006400;
+  }
+}
+
+/* Judul kategori */
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #006400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Sosmed & marketplace */
+.social-links,
+.marketplace-links {
+  margin: 12px 0;
+}
+
+.social-links a,
+.marketplace-links a {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 6px 10px;
+  color: #006400;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  font-weight: 500;
+}
+
+.social-links a i,
+.marketplace-links a i {
+  margin-right: 6px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+.social-links a:hover,
+.marketplace-links a:hover {
+  transform: scale(1.1);
+  color: #ffd700;
+}
+
+/* Kontak */
+.contact-box {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #2f4f4f;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-box a {
+  display: inline-block;
+  margin-top: 8px;
+  text-decoration: none;
+  background: #25d366;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+  animation: pulse 2s infinite;
+  letter-spacing: 0.5px;
+}
+
+.contact-box a:hover {
+  background: #1ebe5b;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(37, 211, 102, 0.6);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.9);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(37, 211, 102, 0.6);
+  }
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  .logo-main {
+    max-width: 250px;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .lead {
+    font-size: 0.9rem;
+  }
+  .social-links a,
+  .marketplace-links a {
+    display: block;
+    margin: 6px auto;
+  }
+}
