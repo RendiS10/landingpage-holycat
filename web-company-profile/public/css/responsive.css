@@ -1,0 +1,123 @@
+/* Max width 900px */
+@media (max-width: 900px) {
+  /* Hero */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+
+  .info-section {
+    justify-content: center;
+  }
+
+  /* About */
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image.large img {
+    max-width: 100%;
+  }
+
+  .about-text {
+    margin-top: 20px;
+  }
+
+  .about-image.small img {
+    margin: auto;
+  }
+
+  /* Product List */
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Care Section */
+  .care-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stat-item {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .stat-item .number {
+    text-align: center;
+  }
+}
+
+/* Max width 768px */
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff9f0;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .book-btn {
+    display: none;
+  }
+
+  /* Pet Section & Mission */
+  .pet-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mission-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-text {
+    order: -1;
+  }
+
+  /* Donation Section */
+  .donation-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .donation-text {
+    padding-right: 0;
+  }
+
+  .donation-options {
+    justify-content: center;
+  }
+
+  /* Client Stats & Testimonials */
+  .client-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+}
