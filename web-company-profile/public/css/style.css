@@ -1,0 +1,385 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff9f0;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #fff9f0;
+  position: relative;
+  z-index: 100;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.book-btn a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background: #4caf50;
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  margin: 4px 0;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1 1 40%;
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.hero-text .btn {
+  background: #4caf50;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero-image {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-image img {
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+/* Info Card bawah */
+.info-section {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 20px 40px 60px;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.info-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-image {
+    margin-top: 30px;
+  }
+  .info-section {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff9f0;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .book-btn {
+    display: none;
+  }
+}
+/* Container utama */
+.pet-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 15px;
+}
+
+/* Card umum */
+.pet-card {
+  flex: 1 1 200px;
+  min-width: 220px;
+  max-width: 250px;
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.pet-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.pet-card h3 {
+  margin: 10px 0;
+}
+
+/* Warna khusus tiap card */
+.yellow {
+  background: #fdbf3b;
+  color: #000;
+}
+
+.green {
+  background: #3fa55b;
+}
+
+/* Bagian mission */
+.mission-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin: 30px 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  gap: 15px;
+}
+
+.mission-btn {
+  background: #fdf7f1;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mission-btn img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.mission-text {
+  flex: 1;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.mission-pets {
+  display: flex;
+  gap: 10px;
+}
+
+.mission-pets img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pet-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mission-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-text {
+    order: -1;
+  }
+}
+
+/* Section Utama */
+.about {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Konten utama */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Gambar besar */
+.about-image.large img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Gambar kecil di atas teks */
+.about-image.small img {
+  width: 150px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Teks */
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-text h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Tombol */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #3fa55b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #2e7d42;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image.large img {
+    max-width: 100%;
+  }
+
+  .about-text {
+    margin-top: 20px;
+  }
+
+  .about-image.small img {
+    margin: auto;
+  }
+}
