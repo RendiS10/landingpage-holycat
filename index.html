@@ -1,81 +1,385 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Holycat</title>
-    <link rel="icon" type="image/png" href="./public/image/icon.png" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="./public/css/responsive.css" />
+    <link rel="icon" type="image/png" href="./public/images/icon.png" />
+    <title>Holycatlabs</title>
   </head>
   <body>
-    <div class="container">
-      <!-- Logo Utama -->
-      <img
-        src="./public/image/logo.png"
-        alt="PT Holycatlabs Indonesia"
-        class="logo-main"
-      />
-
-      <!-- Pesan -->
-      <h2>🚧 Under Maintenance 🚧</h2>
-      <p class="lead">Something new will come very soon...</p>
-
-      <!-- Social Media -->
-      <div class="social-links">
-        <p class="title">Ikuti kami di Social Media:</p>
-        <a href="https://www.instagram.com/holycat_official/" target="_blank">
-          <i class="fab fa-instagram"></i> Instagram
-        </a>
-        <a href="https://www.tiktok.com/@holycatofficial" target="_blank">
-          <i class="fab fa-tiktok"></i> TikTok
-        </a>
-        <a
-          href="https://www.facebook.com/profile.php?id=100090287932346"
-          target="_blank"
-        >
-          <i class="fab fa-facebook"></i> Facebook
-        </a>
-        <a
-          href="https://www.linkedin.com/company/holycat-labs-indonesia/"
-          target="_blank"
-        >
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+        <img src="./public/images/logo.png" alt="logo" />
       </div>
 
-      <!-- Marketplace -->
-      <div class="marketplace-links">
-        <p class="title">Temukan produk kami di Marketplace:</p>
-        <a href="https://shope.ee/1qBSMggVQn" target="_blank">
-          <i class="fa-solid fa-bag-shopping"></i> Shopee
-        </a>
-        <a href="https://www.lazada.co.id/shop/holycatlabs-id" target="_blank">
-          <i class="fa-solid fa-cart-shopping"></i> Lazada
-        </a>
-        <a href="https://www.tokopedia.com/holycatlabs" target="_blank">
-          <i class="fa-solid fa-store"></i> Tokopedia
-        </a>
-        <a href="https://www.tiktok.com/@holycatofficial" target="_blank">
-          <i class="fab fa-tiktok"></i> TikTok
-        </a>
+      <ul class="nav-links">
+        <li><a href="#">OUR PRODUCT</a></li>
+        <li><a href="#">SALE & OFFER</a></li>
+        <li><a href="#">OUR UNIVERSE</a></li>
+        <li><a href="#">DEMOS</a></li>
+      </ul>
+
+      <div class="book-btn">
+        <a href="#">Book Now</a>
       </div>
 
-      <!-- Kontak -->
-      <div class="contact-box">
-        <p>Hubungi Customer Service:</p>
-        <a href="https://wa.me/6285171002858" target="_blank">
-          <i class="fab fa-whatsapp"></i> Chat via WhatsApp
-        </a>
+      <!-- Hamburger -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>HAPPY PET</h1>
+        <p>
+          Pampered paws Pet Core tailored services for your furry family
+          cherished members of the family.
+        </p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://i.ibb.co/1nPM5FZ/dog.png" alt="Happy Dog" />
+      </div>
+    </section>
+
+    <!-- Info Cards -->
+    <section class="info-section">
+      <div class="info-card">
+        <img src="https://i.ibb.co/whwnytd/puppies.png" alt="puppies" />
+        <h3>How to take care of your pets</h3>
+        <p>Learn how to take care of your pet with proper guidance.</p>
+      </div>
+      <div class="info-card">
+        <img src="https://i.ibb.co/g6X0D3Q/puppy.png" alt="puppy" />
+        <h3>Pet Sale</h3>
+        <p>Blog | Article</p>
+      </div>
+    </section>
+
+    <!-- Section Pet Cards -->
+    <section class="pet-section">
+      <div class="pet-card">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
+          alt="Pet"
+        />
+        <h3>Pet's</h3>
+        <p>Let us know what we can do for your Pet.</p>
+      </div>
+
+      <div class="pet-card">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
+          alt="Superdog"
+        />
+        <h3>Superdog</h3>
+        <p>Learn more +</p>
+      </div>
+
+      <div class="pet-card yellow">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
+          alt="Feed with love"
+        />
+        <h3>Feed with love</h3>
+        <p>Feed your pet with love and cheer them up using toys.</p>
+      </div>
+
+      <div class="pet-card green">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
+          alt="Pet stories"
+        />
+        <h3>55+ Stories</h3>
+        <p>
+          Pet stories <br />
+          Learn more +
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+      <button class="mission-btn">
+        Book a Schedule
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
+          alt="Pet icon"
+        />
+      </button>
+
+      <div class="mission-text">
+        Our mission at Pet Care Oasis is simple: to provide a sanctuary of love,
+        care, and expertise for every furry, feathered.
+      </div>
+
+      <div class="mission-pets">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
+          alt="Pet 1"
+        />
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
+          alt="Pet 2"
+        />
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
+          alt="Pet 3"
+        />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+      <div class="about-header">
+        <h2>ABOUT US</h2>
+      </div>
+
+      <div class="about-content">
+        <!-- Gambar kiri -->
+        <div class="about-image large">
+          <img
+            src="https://images.unsplash.com/photo-1558788353-f76d92427f16"
+            alt="Golden Retriever"
+          />
+        </div>
+
+        <!-- Konten kanan -->
+        <div class="about-text">
+          <div class="about-image small">
+            <img
+              src="https://images.unsplash.com/photo-1602067340370-bdcebe8d6a07"
+              alt="Shih Tzu"
+            />
+          </div>
+          <h3>YOUR PUPP'S BEST FRIEND</h3>
+          <p>
+            Our veterinary care goes beyond just treating and the ailments;
+            about preventive care, wellness exams, and compassionate you and
+            your pet.
+          </p>
+          <a href="#" class="btn">SHOP NOW</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+      <div class="categories-header">
+        <h2>TOP CATEGORIES & FOOD PRODUCTS</h2>
+        <p>
+          Our veterinary care goes beyond just treating ailments; about
+          preventive care, wellness exams, and compassionate support both you
+          and your pet.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-buttons">
+        <button class="active">🐾 ALL</button>
+        <button>🐶 DOG</button>
+        <button>🐱 CAT</button>
+        <button>🐦 BIRD</button>
+        <button>🐟 FISH</button>
+      </div>
+
+      <!-- Product List -->
+      <div class="product-list">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://i.ibb.co/vjxR6Mf/dog-food1.png"
+              alt="Chicken & Rice"
+            />
+          </div>
+          <h3>CHICKEN & RICE</h3>
+          <p class="price">$40.00</p>
+          <p class="rating">⭐⭐⭐⭐☆</p>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://i.ibb.co/Bf5Qbmt/dog-food2.png"
+              alt="Fish & Potato"
+            />
+          </div>
+          <h3>FISH & POTATO</h3>
+          <p class="price">$50.00</p>
+          <p class="rating">⭐⭐⭐⭐☆</p>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://i.ibb.co/k2wFnQF/dog-food3.png"
+              alt="Kangaroo & Lamb"
+            />
+          </div>
+          <h3>KANGAROO & LAMB</h3>
+          <p class="price">$60.00</p>
+          <p class="rating">⭐⭐⭐⭐☆</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Care Section -->
+    <section class="care">
+      <div class="care-container">
+        <!-- Gambar anjing -->
+        <div class="care-image">
+          <img
+            src="https://images.unsplash.com/photo-1619983081563-430e8b8d0ec4"
+            alt="Dog"
+          />
+        </div>
+
+        <!-- Konten teks -->
+        <div class="care-text">
+          <h2>WHAT MAKE US CARE ABOUT PET?</h2>
+          <h3>CATS AND DOGS ARE ADOPTION</h3>
+          <p>
+            This includes a mix of high quality commercial pet food and
+            occasional treats, supplemented with fresh fruits and vegetables.
+          </p>
+
+          <!-- Statistik -->
+          <div class="stats">
+            <div class="stat-item">
+              <span class="icon">❮</span>
+              <span class="number">5786 RESCUED</span>
+            </div>
+            <div class="stat-item">
+              <span class="icon">❮</span>
+              <span class="number">372 ADOPTED</span>
+            </div>
+            <div class="stat-item">
+              <span class="icon">❮</span>
+              <span class="number">2587 REVIEWS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section class="donation-section">
+      <div class="donation-text">
+        <h4>50% OFF</h4>
+        <h2>ENHANCE YOUR IMPACT<br />WITH A DONATION</h2>
+        <p>
+          his includes a mix of high-quality commercial pet food and occasional
+          treats, supplemented with fresh fruits and vegetables
+        </p>
+
+        <div class="donation-amounts">
+          <button>$20</button>
+          <button>$30</button>
+          <button class="active">$50</button>
+          <button>$60</button>
+        </div>
+
+        <div class="donation-options">
+          <label><input type="checkbox" checked /> ONE TIME</label>
+          <label><input type="checkbox" /> MONTHLY</label>
+        </div>
+
+        <button class="donation-btn">SHOP NOW</button>
+      </div>
+
+      <div class="donation-image">
+        <img src="https://i.ibb.co/hB59J3W/dog-cat.png" alt="Dog and Cat" />
+      </div>
+    </section>
+
+    <!-- Client Stats Section -->
+    <section class="client-stats">
+      <div class="stat-box">
+        <h2>150K&</h2>
+        <p>Nutritional Complete</p>
+      </div>
+      <div class="stat-box">
+        <h2>+ 15</h2>
+        <p>Product Sale</p>
+      </div>
+      <div class="stat-box">
+        <h2>99%</h2>
+        <p>Client Satisfaction</p>
+      </div>
+    </section>
+
+    <!-- Client Testimonials Section -->
+    <section class="client-testimonials">
+      <h2 class="title">OUR CLIENT SAYING</h2>
+      <p class="subtitle">
+        about preventive care, wellness exams, and compassionate you and your
+        pet.
+      </p>
+      <button class="learn-btn">LEARN MORE</button>
+
+      <div class="testimonials">
+        <div class="testimonial-card">
+          <span class="quote">“</span>
+          <p>
+            Understanding our users the perspectives allows us to for enhance
+            usability, navigation, and overall satisfaction.
+          </p>
+          <div class="author">
+            <img src="https://i.ibb.co/2jnydR4/person1.jpg" alt="James" />
+            <div>
+              <h4>JAMES BROUN</h4>
+              <p>USA</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <span class="quote">“</span>
+          <p>
+            Simplifying complex information for easier comprehension, and
+            optimizing the website layout for intuitive browsing.
+          </p>
+          <div class="author">
+            <img src="https://i.ibb.co/BcyxdpX/person2.jpg" alt="Felix" />
+            <div>
+              <h4>FELIX SCHMITZ</h4>
+              <p>USA</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <span class="quote">“</span>
+          <p>
+            With each iteration, we strive to create a user-friendly platform
+            that serves as a valuable resource for pet care advice.
+          </p>
+          <div class="author">
+            <img src="https://i.ibb.co/Tc1cdLz/person3.jpg" alt="Monika" />
+            <div>
+              <h4>MONIKA KONIG</h4>
+              <p>UK</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Script -->
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
