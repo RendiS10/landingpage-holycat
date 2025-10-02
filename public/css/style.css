@@ -98,8 +98,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 60px;
-  background: linear-gradient(135deg, #ffffff 60%, #f4fdf9);
+  padding: 10px 60px;
+  background-image: url("../images/bg-hero.png");
+  background-size: cover;
   flex-wrap: wrap;
 }
 
@@ -144,12 +145,11 @@ nav {
 .hero-image img {
   max-width: 400px;
   border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* === ABOUT US SECTION === */
 .about-us {
-  padding: 80px 60px;
+  padding: 20px 60px;
   background: #ffffff;
 }
 
@@ -209,13 +209,12 @@ nav {
 .about-image img {
   width: 300px;
   border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* === VISI & MISI SECTION === */
 .vision-mission {
   background: linear-gradient(135deg, #ffffff 60%, #e8f8f2);
-  padding: 100px 60px;
+  padding: 20px 60px;
 }
 
 .vision-mission .container {
@@ -260,4 +259,85 @@ nav {
 
 .vision-mission .image img:hover {
   transform: scale(1.05);
+}
+.products-section {
+  padding: 20px 60px;
+  background: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+.section-subtitle {
+  max-width: 700px;
+  margin: 10px auto 30px;
+  color: #666;
+  font-size: 1rem;
+}
+
+.filter-menu {
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  background: #f6f6f6;
+  border: none;
+  padding: 10px 18px;
+  margin: 5px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #44af7c;
+  color: #fff;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  color: #2b2b2b;
+  margin-bottom: 8px;
+}
+
+.product-card .price {
+  color: #44af7c;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.rating {
+  font-size: 0.9rem;
+  color: #ffbf00;
 }

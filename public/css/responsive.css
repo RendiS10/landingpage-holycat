@@ -93,7 +93,7 @@
   }
 
   .vision-mission .content {
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
   }
 
