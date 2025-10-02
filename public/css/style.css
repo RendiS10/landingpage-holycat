@@ -1,24 +1,44 @@
+/* === GLOBAL === */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Dongle", sans-serif;
   background: #ffffff;
+  color: #2b2b2b;
 }
 
-/* Navbar */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Dongle", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+/* === NAVBAR === */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 11px 60px 20px 60px;
+  padding: 15px 60px;
   background: #ffffff;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .logo img {
   width: 225px;
   height: 75px;
-  padding-bottom: 15px;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -34,22 +54,31 @@ nav {
 .nav-links a {
   text-decoration: none;
   color: #2b2b2b;
-  font-size: 15px;
+  font-size: 20px;
+  transition: color 0.3s;
 }
+
 .nav-links a:hover {
   color: #44af7c;
+  font-weight: 700;
 }
 
 .book-btn a {
   text-decoration: none;
-  color: white;
-  font-weight: bold;
+  color: #fff;
+  font-weight: 700;
   background: #ffbf00;
-  padding: 8px 20px;
-  border-radius: 20px;
+  padding: 10px 24px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
 }
 
-/* Hamburger */
+.book-btn a:hover {
+  background: #44af7c;
+  color: #fff;
+}
+
+/* === HAMBURGER MENU === */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -64,13 +93,13 @@ nav {
   border-radius: 5px;
 }
 
-/* Hero Section */
+/* === HERO SECTION === */
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  padding: 0px 60px 0px 60px;
+  padding: 80px 60px;
+  background: linear-gradient(135deg, #ffffff 60%, #f4fdf9);
   flex-wrap: wrap;
 }
 
@@ -80,26 +109,30 @@ nav {
 
 .hero-text h1 {
   color: #2b2b2b;
-  font-size: 45px;
-  margin-bottom: 20px;
+  font-size: 60px;
+  margin-bottom: 15px;
 }
 
 .hero-text p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 30px;
-  color: #555555;
+  font-size: 22px;
+  color: #555;
+  margin-bottom: 25px;
 }
 
 .hero-text .btn {
-  background: #ffbf00;
-  color: white;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 25px;
-  font-size: 16px;
-  cursor: pointer;
+  background: #44af7c;
+  color: #fff;
+  padding: 12px 35px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.3s ease;
   text-decoration: none;
+}
+
+.hero-text .btn:hover {
+  background: #ffbf00;
+  color: #2b2b2b;
 }
 
 .hero-image {
@@ -110,13 +143,14 @@ nav {
 
 .hero-image img {
   max-width: 400px;
-  /* menambahkan shadow */
-
   border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
+
 /* === ABOUT US SECTION === */
 .about-us {
-  padding: 50px 85px;
+  padding: 80px 60px;
+  background: #ffffff;
 }
 
 .container {
@@ -137,33 +171,34 @@ nav {
 }
 
 .about-text h2 {
-  font-size: 2.5rem;
-  color: #2b2b2b;
+  font-size: 50px;
   margin-bottom: 20px;
-  border-left: 6px solid #44af7c; /* Aksen hijau */
-  padding-left: 12px;
+  color: #2b2b2b;
+  border-left: 8px solid #44af7c;
+  padding-left: 15px;
 }
 
 .about-text p {
-  font-size: 1.1rem;
+  font-size: 22px;
   color: #555;
-  margin-bottom: 20px;
   line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .cta-btn {
-  background: #ffbf00; /* CTA kuning */
+  background: #ffbf00;
   color: #2b2b2b;
   border: none;
-  padding: 12px 24px;
-  border-radius: 25px;
-  font-weight: bold;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .cta-btn:hover {
-  background: #44af7c; /* Hover hijau */
+  background: #44af7c;
   color: #fff;
 }
 
@@ -173,12 +208,14 @@ nav {
 
 .about-image img {
   width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Section Visi & Misi */
+/* === VISI & MISI SECTION === */
 .vision-mission {
   background: linear-gradient(135deg, #ffffff 60%, #e8f8f2);
-  padding: 80px 20px;
+  padding: 100px 60px;
 }
 
 .vision-mission .container {
@@ -191,6 +228,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   gap: 50px;
+  flex-wrap: wrap;
 }
 
 .vision-mission .text {
@@ -198,15 +236,14 @@ nav {
 }
 
 .vision-mission .text h2 {
-  font-size: 1.8rem;
+  font-size: 40px;
   color: #44af7c;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .vision-mission .text p {
-  font-size: 1.05rem;
+  font-size: 22px;
   color: #2b2b2b;
-  line-height: 1.7;
   margin-bottom: 25px;
 }
 

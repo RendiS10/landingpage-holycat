@@ -1,92 +1,19 @@
-/* Max width 900px */
+/* === RESPONSIVE === */
 @media (max-width: 900px) {
-  /* Hero */
-  .hero {
-    flex-direction: column;
-    text-align: center;
+  nav {
+    padding: 15px 30px;
   }
 
-  .hero-image {
-    margin-top: 30px;
-  }
-
-  .info-section {
-    justify-content: center;
-  }
-
-  /* About */
-  .about-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-image.large img {
-    max-width: 100%;
-  }
-
-  .about-text {
-    margin-top: 20px;
-  }
-
-  .about-image.small img {
-    margin: auto;
-  }
-
-  /* Product List */
-  .product-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Care Section */
-  .care-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .stat-item {
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .stat-item .number {
-    text-align: center;
-  }
-  .about-holycat {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-image-mask {
-    margin-top: 30px;
-  }
-  .vision-mission .content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .vision-mission .text {
-    order: 1;
-  }
-
-  .vision-mission .image {
-    order: 2;
-  }
-}
-
-/* Max width 768px */
-@media (max-width: 768px) {
-  /* Navbar */
   .nav-links {
     display: none;
     flex-direction: column;
-    background: #fff9f0;
+    background: #ffffff;
     position: absolute;
-    top: 65px;
+    top: 70px;
     right: 0;
     width: 200px;
-    padding: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
   }
 
   .nav-links.active {
@@ -97,70 +24,19 @@
     display: flex;
   }
 
-  .book-btn {
-    display: none;
-  }
-
-  /* Pet Section & Mission */
-  .pet-section {
+  .hero {
     flex-direction: column;
-    align-items: center;
-  }
-
-  .mission-section {
-    flex-direction: column;
+    padding: 40px 20px;
     text-align: center;
   }
 
-  .mission-text {
-    order: -1;
+  .hero-text h1 {
+    font-size: 42px;
   }
 
-  /* Donation Section */
-  .donation-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .donation-text {
-    padding-right: 0;
-  }
-
-  .donation-options {
-    justify-content: center;
-  }
-
-  /* Client Stats & Testimonials */
-  .client-stats {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .testimonials {
-    flex-direction: column;
-    align-items: center;
-  }
-  .about-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  .about-text h2 {
-    font-size: 2rem;
-  }
-
+  .about-content,
   .vision-mission .content {
     flex-direction: column;
     text-align: center;
-  }
-
-  .vision-mission .text ul li {
-    text-align: left;
-  }
-  .visi-misi-content {
-    flex-direction: column;
-  }
-  .visi,
-  .misi {
-    flex: 1 1 100%;
   }
 }
