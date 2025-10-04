@@ -260,6 +260,109 @@ nav {
 .vision-mission .image img:hover {
   transform: scale(1.05);
 }
+/*  */
+/* Container utama */
+.pet-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Card umum */
+.pet-card {
+  flex: 1 1 200px;
+  min-width: 220px;
+  max-width: 250px;
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+.pet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.pet-card.one {
+  border-radius: 50px 0px 0px 0px;
+}
+.pet-card.four {
+  border-radius: 0px 50px 0px 0px;
+}
+
+.pet-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.pet-card h3 {
+  margin: 10px 0;
+}
+
+/* Warna khusus tiap card */
+.yellow {
+  background: #fdbf3b;
+  color: #000;
+}
+
+.green {
+  background: #3fa55b;
+}
+
+/* Bagian mission */
+.mission-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin: 30px 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  gap: 15px;
+}
+
+.mission-btn {
+  background: #fdf7f1;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mission-btn img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.mission-text {
+  flex: 1;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.mission-pets {
+  display: flex;
+  gap: 10px;
+}
+
+.mission-pets img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* === PRODUCTS SECTION === */
 .products-section {
   padding: 20px 60px;
   background: #fff;
