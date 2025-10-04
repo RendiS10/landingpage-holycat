@@ -108,6 +108,30 @@
   .vision-mission .image img {
     max-width: 300px;
   }
+  /* Pet Section & Mission */
+  .pet-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mission-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-text {
+    order: -1;
+  }
+  /* Client Stats & Testimonials */
+  .client-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* === MOBILE (max-width: 480px) === */
