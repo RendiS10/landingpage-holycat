@@ -41,6 +41,7 @@
     flex-direction: column;
     padding: 50px 30px;
     text-align: center;
+    height: auto;
   }
 
   .hero-text {
@@ -235,9 +236,11 @@
     font-size: 18px;
     margin-bottom: 20px;
   }
-
   .vision-mission .image img {
-    display: none;
+    height: 250px;
+  }
+  .pet-section {
+    gap: 1rem;
   }
 }
 
@@ -281,6 +284,6 @@
   }
 
   .vision-mission .image img {
-    display: none;
+    height: 250px;
   }
 }
