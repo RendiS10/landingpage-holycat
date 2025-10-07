@@ -149,6 +149,47 @@
     flex-direction: column;
     align-items: center;
   }
+  .featured-products {
+    padding: 60px 30px;
+  }
+
+  .featured-header h2 {
+    font-size: 40px;
+  }
+
+  .featured-grid {
+    gap: 25px;
+  }
+
+  .product-item {
+    flex: 0 1 45%; /* Dua kolom di tablet */
+  }
+  .client-testimonials {
+    padding: 60px 30px;
+  }
+
+  .testimonials-grid {
+    gap: 25px;
+  }
+
+  .main-footer {
+    padding: 40px 30px 20px 30px;
+  }
+
+  .footer-grid {
+    /* Mengubah ke susunan dua kolom */
+    justify-content: space-around;
+  }
+
+  .footer-about {
+    flex: 1 1 100%; /* Kolom pertama mengambil lebar penuh untuk tampilan yang lebih baik */
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .footer-about .social-links {
+    justify-content: center;
+  }
 }
 
 /* === MOBILE (max-width: 480px) === */
@@ -241,6 +282,51 @@
   }
   .pet-section {
     gap: 1rem;
+  }
+  featured-products {
+    padding: 40px 20px;
+  }
+
+  .featured-header h2 {
+    font-size: 35px;
+  }
+
+  .product-item {
+    flex: 1 1 100%; /* Satu kolom penuh di mobile */
+    max-width: none;
+  }
+  .client-testimonials {
+    padding: 40px 20px;
+  }
+
+  .testimonial-header h2 {
+    font-size: 35px;
+  }
+
+  .testimonial-card {
+    max-width: none; /* Biarkan card mengambil lebar penuh */
+  }
+  .main-footer {
+    padding: 40px 20px 15px 20px;
+  }
+
+  .footer-grid {
+    flex-direction: column; /* Semua menjadi satu kolom */
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-links,
+  .footer-contact {
+    flex: 1 1 100%;
+  }
+
+  .footer-about {
+    margin-bottom: 0;
+  }
+
+  .footer-links ul {
+    text-align: center;
   }
 }
 

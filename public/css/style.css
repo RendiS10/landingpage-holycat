@@ -35,7 +35,7 @@ p {
 /* === NAVBAR === */
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 15px 60px;
   background: #ffffff;
@@ -56,6 +56,7 @@ nav {
   display: flex;
   list-style: none;
   gap: 25px;
+  padding-top: 10px;
 }
 
 .nav-links li {
@@ -73,7 +74,9 @@ nav {
   color: #44af7c;
   font-weight: 700;
 }
-
+.book-btn {
+  padding-top: 10px;
+}
 .book-btn a {
   text-decoration: none;
   color: #fff;
@@ -107,12 +110,12 @@ nav {
 /* === HERO SECTION === */
 .hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 10px 60px;
-  background-image: url("../images/bg-hero.png");
+  background: #e8f8f2;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 84vh;
 }
 
 .hero-text {
@@ -331,6 +334,7 @@ nav {
 .pet-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: #ffbf00;
 }
 .pet-card.one {
   border-radius: 50px 0px 0px 0px;
@@ -589,10 +593,9 @@ nav {
 }
 
 .icon-circle img {
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  border-radius: 100%;
   object-fit: contain;
-  /* Reset transform jika Anda memiliki styling global pada img */
   transform: none;
 }
 
@@ -622,97 +625,333 @@ nav {
   opacity: 1;
   transform: translateY(0);
 }
-/* === PRODUCTS SECTION === */
-.products-section {
-  padding: 20px 60px;
-  background: #fff;
+/* ================================== */
+/* === FEATURED PRODUCTS SECTION === */
+/* ================================== */
+
+.featured-products {
+  padding: 80px 60px;
+  background: linear-gradient(
+    135deg,
+    var(--light-bg) 0%,
+    var(--white) 100%
+  ); /* Gradien yang smooth */
   text-align: center;
 }
 
-.section-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #2b2b2b;
+.featured-header {
+  margin-bottom: 50px;
 }
 
-.section-subtitle {
-  max-width: 700px;
-  margin: 10px auto 30px;
-  color: #666;
-  font-size: 1rem;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-}
-
-.product-card {
-  background: #fafafa;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-}
-
-.product-card img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 15px;
-  border-radius: 8px;
-}
-
-.product-card h3 {
-  font-size: 1.1rem;
-  color: #2b2b2b;
-  margin-bottom: 8px;
-}
-
-.product-card .price {
-  color: #44af7c;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.rating {
-  font-size: 0.9rem;
-  color: #ffbf00;
-}
-/* Testimonials Section */
-.client-testimonials {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #fef9ee;
-}
-
-.client-testimonials .title {
-  font-size: 32px;
-  font-weight: bold;
+.featured-header h2 {
+  font-size: 50px;
+  color: var(--text-color);
   margin-bottom: 10px;
 }
 
-.client-testimonials .subtitle {
-  color: #666;
+.featured-header p {
+  font-size: 22px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.featured-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.product-item {
+  flex: 0 1 300px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-image-container {
+  position: relative;
+  margin-bottom: 15px;
+  overflow: hidden; /* Penting untuk menjaga badge tetap di dalam */
+}
+
+.product-image-container img {
+  width: 100%;
+  height: 250px; /* Tinggi tetap untuk konsistensi */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-item h3 {
+  font-size: 32px;
+  color: var(--primary-green);
+  margin-bottom: 5px;
+}
+
+.product-item .description {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Badge (Label) */
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Tombol Shop */
+.shop-btn {
+  display: inline-block;
+  background-color: var(--primary-yellow);
+  color: var(--text-color);
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.shop-btn:hover {
+  background-color: var(--primary-green);
+  color: white;
+}
+/* ================================== */
+/* === CLIENT TESTIMONIALS SECTION === */
+/* ================================== */
+
+.client-testimonials {
+  padding: 80px 60px;
+  background: var(
+    --light-bg
+  ); /* Menggunakan warna latar belakang terang Anda */
+  text-align: center;
+}
+
+.testimonial-header {
+  margin-bottom: 50px;
+}
+
+.testimonial-header h2 {
+  font-size: 50px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.testimonial-header p {
+  font-size: 22px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonial-card {
+  flex: 1 1 300px;
+  max-width: 350px;
+  background: #ffffff;
+  padding: 30px;
+  padding-top: 50px; /* Ruang untuk tanda kutip */
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card blockquote {
+  margin: 0;
+}
+
+.testimonial-card p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
   margin-bottom: 20px;
 }
 
-.learn-btn {
-  padding: 12px 28px;
-  border: none;
-  background: #4caf50;
-  color: white;
-  border-radius: 30px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-bottom: 40px;
-  transition: background 0.3s;
+/* Tanda Kutip Besar */
+.testimonial-card .quote {
+  font-family: Arial, sans-serif;
+  font-size: 80px;
+  color: var(--primary-green);
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  opacity: 0.2;
+  line-height: 1;
+  z-index: 1; /* Pastikan di belakang teks */
 }
 
-.learn-btn:hover {
-  background: #43a047;
+/* Penulis (Author) */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* Hilangkan transformasi aneh yang mungkin diwarisi */
+  transform: none;
+}
+
+.author h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.author p {
+  font-size: 16px;
+  color: #777;
+  margin: 0;
+}
+/* ================================== */
+/* === MAIN FOOTER SECTION === */
+/* ================================== */
+
+.main-footer {
+  background-color: var(--primary-green); /* Hijau utama sebagai background */
+  color: #ffffff; /* Teks putih */
+  padding: 60px 60px 20px 60px;
+  font-size: 18px; /* Ukuran font umum untuk footer */
+}
+
+.main-footer h4 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-yellow); /* Judul menggunakan warna aksen kuning */
+  margin-bottom: 25px;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* --- Kolom About --- */
+.footer-about {
+  flex: 1 1 300px;
+}
+
+.footer-logo {
+  width: 200px; /* Sesuaikan ukuran logo */
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Membuat logo (jika berwarna) menjadi putih */
+  margin-bottom: 15px;
+}
+
+.footer-about p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* --- Kolom Links --- */
+.footer-links,
+.footer-contact {
+  flex: 0 1 200px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--primary-yellow);
+}
+
+/* --- Kolom Kontak --- */
+.footer-contact p {
+  margin: 10px 0;
+}
+
+/* (Asumsi Anda menggunakan ikon font atau SVG untuk telepon/email/lokasi, jika tidak, abaikan ikon-ini) */
+.footer-contact i {
+  margin-right: 8px;
+  color: var(--primary-yellow);
+}
+
+/* --- Social Media Links --- */
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1); /* Membuat ikon media sosial putih */
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.social-links img:hover {
+  opacity: 1;
+  filter: drop-shadow(0 0 5px var(--primary-yellow));
+}
+
+/* --- Footer Bottom --- */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 16px;
+  margin: 0;
 }
