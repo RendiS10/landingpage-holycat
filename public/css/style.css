@@ -215,12 +215,6 @@ nav {
 .pet-card h3 {
   margin: 10px 0;
 }
-/* Warna khusus tiap card */
-
-.pet-card:nth-child(3):hover {
-  background-color: var(--primary-green);
-  color: var(--white);
-}
 
 /* === MISSION SECTION === */
 .mission-section {

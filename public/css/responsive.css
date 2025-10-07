@@ -4,22 +4,34 @@
   nav {
     padding: 15px 30px;
   }
+
   .logo img {
     width: 180px;
     height: 60px;
   }
+
   .nav-links {
+    position: absolute;
     top: 75px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: center;
     padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: none;
     gap: 15px;
   }
+
   .nav-links.active {
     display: flex;
   }
+
   .book-btn {
     display: none;
   }
+
   .hamburger {
     display: flex;
   }
@@ -158,12 +170,23 @@
   nav {
     padding: 12px 20px;
   }
+
   .logo img {
     width: 150px;
     height: 50px;
   }
-  /* ... nav-links, hamburger, dll. sama ... */
 
+  .nav-links {
+    top: 65px;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+  }
+
+  .hamburger span {
+    width: 22px;
+  }
   /* Hero Section */
   .hero {
     padding: 40px 20px;
