@@ -10,15 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+
     <title>Holycatlabs</title>
   </head>
   <body>
@@ -60,22 +56,22 @@
     </section>
 
     <section class="pet-section" id="pet-section">
-      <div class="pet-card one animate-from-left">
+      <div class="pet-card one animate-from-bottom">
         <img src="./public/images/cape.png" alt="Pet" />
         <h3>Gratis Konsultasi 24 Jam</h3>
       </div>
 
-      <div class="pet-card animate-from-left">
+      <div class="pet-card animate-from-bottom">
         <img src="./public/images/love.png" alt="Superdog" />
         <h3>Gratis 100% Refund</h3>
       </div>
 
-      <div class="pet-card animate-from-right">
+      <div class="pet-card animate-from-bottom">
         <img src="./public/images/kaget.png" alt="Feed with love" />
         <h3>Produk Berizin Kementan</h3>
       </div>
 
-      <div class="pet-card four animate-from-right">
+      <div class="pet-card four animate-from-bottom">
         <img src="./public/images/aboutus2.png" alt="Pet stories" />
         <h3>Rekomendasi&nbsp;Dokter&nbsp;Hewan</h3>
       </div>
@@ -97,90 +93,8 @@
       </div>
     </section>
 
-    <section class="about-us" id="about">
-      <div class="container">
-        <div class="about-content">
-          <div class="about-text animate-from-left">
-            <h2>Tentang <b>Holycatlabs</b></h2>
-            <p>
-              <span id="teksSingkat">
-                Di Holycat Labs, kami sepenuh hati mendedikasikan diri untuk
-                menyediakan rangkaian produk kesehatan yang komprehensif bagi
-                hewan peliharaan kesayangan Anda.
-              </span>
-              <span id="teksLanjutan" style="display: none">
-                Misi kami adalah menghadirkan produk berkualitas tinggi yang
-                dapat Anda percaya sepenuhnya, dengan harga yang selalu
-                terjangkau. Setiap produk kami diracik dengan cermat oleh para
-                profesional ahli di industri ini, menjamin keamanan dan
-                efektivitas untuk anabul Anda. Kami bangga menyajikan solusi
-                premium yang memenuhi beragam kebutuhan kesehatan sahabat
-                berbulu Anda, menjadikan kami pilihan utama bagi para pecinta
-                hewan. Pilih Holycat Labs untuk obat hewan peliharaan yang
-                terpercaya, hemat biaya, dan selalu bisa diandalkan oleh Anda
-                serta kucing kesayangan Anda!
-              </span>
-            </p>
-            <p
-              id="tombolBacaSelengkapnya"
-              onclick="toggleTeks()"
-              class="read-more-btn"
-            >
-              Baca Selengkapnya
-            </p>
-          </div>
-          <div class="about-image animate-from-right">
-            <img src="./public/images/aboutus2.png" alt="About Happy Pet" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="vision-mission">
-      <div class="container">
-        <div class="content">
-          <div class="image animate-from-left">
-            <img
-              src="./public/images/visi-misi.png"
-              alt="Holycat Labs Illustration"
-            />
-          </div>
-          <div class="text animate-from-right">
-            <h2>Visi Kami</h2>
-            <p>
-              Menjadi advokat terdepan untuk kesehatan dan kebahagiaan kucing,
-              merintis solusi inovatif, dan membina ikatan yang lebih dalam
-              antara kucing dan pemiliknya.
-            </p>
-
-            <h2>Misi Kami</h2>
-            <p id="misiParagraf">
-              <span id="misiSingkat">
-                Di Holycat Labs, misi kami adalah menyediakan produk obat
-                berkualitas premium dan inovatif yang disesuaikan dengan
-                kebutuhan unik teman berbulu kesayangan Anda.
-              </span>
-              <span id="misiLanjutan" style="display: none">
-                Kami berupaya meningkatkan kesejahteraan kucing dengan
-                menawarkan solusi yang aman, efektif, dan terpercaya yang
-                mengutamakan kesehatan dan kebahagiaan mereka. Melalui
-                penelitian, pengembangan, dan edukasi berkelanjutan, kami
-                bertujuan memberdayakan pemilik hewan untuk membuat keputusan
-                yang tepat dan memberikan perawatan terbaik bagi kucing mereka,
-                memastikan mereka menjalani hidup yang penuh vitalitas dan
-                kebahagiaan.
-              </span>
-            </p>
-            <p id="tombolMisi" onclick="toggleMisi()" class="read-more-btn">
-              Baca Selengkapnya
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- productinfo -->
     <section class="productinfo-section" id="products">
-      <div class="container-productinfo">
+      <div class="container">
         <div class="productinfo-header">
           <h2 class="animate-from-bottom">
             Solusi Terbaik untuk Kesehatan Anabul Anda
@@ -242,7 +156,8 @@
         </div>
       </div>
     </section>
-    <section class="featured-products" id="product">
+
+    <section class="featured-products">
       <div class="container">
         <div class="featured-header animate-from-bottom">
           <h2>Produk Unggulan Kami</h2>
@@ -312,6 +227,93 @@
         </div>
       </div>
     </section>
+
+    <section class="about-us" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text animate-from-left">
+            <h2>Tentang <b>Holycatlabs</b></h2>
+            <p>
+              <span id="teksSingkat">
+                Di Holycat Labs, kami sepenuh hati mendedikasikan diri untuk
+                menyediakan rangkaian produk kesehatan yang komprehensif bagi
+                hewan peliharaan kesayangan Anda.
+              </span>
+              <span id="teksLanjutan" style="display: none">
+                Misi kami adalah menghadirkan produk berkualitas tinggi yang
+                dapat Anda percaya sepenuhnya, dengan harga yang selalu
+                terjangkau. Setiap produk kami diracik dengan cermat oleh para
+                profesional ahli di industri ini, menjamin keamanan dan
+                efektivitas untuk anabul Anda. Kami bangga menyajikan solusi
+                premium yang memenuhi beragam kebutuhan kesehatan sahabat
+                berbulu Anda, menjadikan kami pilihan utama bagi para pecinta
+                hewan. Pilih Holycat Labs untuk obat hewan peliharaan yang
+                terpercaya, hemat biaya, dan selalu bisa diandalkan oleh Anda
+                serta kucing kesayangan Anda!
+              </span>
+            </p>
+            <button
+              id="tombolBacaSelengkapnya"
+              onclick="toggleTeks()"
+              class="read-more-btn"
+            >
+              Baca Selengkapnya
+            </button>
+          </div>
+          <div class="about-image animate-from-right">
+            <img src="./public/images/aboutus2.png" alt="About Happy Pet" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="vision-mission">
+      <div class="container">
+        <div class="content">
+          <div class="image animate-from-left">
+            <img
+              src="./public/images/visi-misi.png"
+              alt="Holycat Labs Illustration"
+            />
+          </div>
+          <div class="text animate-from-right">
+            <h2>Visi Kami</h2>
+            <p>
+              Menjadi advokat terdepan untuk kesehatan dan kebahagiaan kucing,
+              merintis solusi inovatif, dan membina ikatan yang lebih dalam
+              antara kucing dan pemiliknya.
+            </p>
+
+            <h2>Misi Kami</h2>
+            <p id="misiParagraf">
+              <span id="misiSingkat">
+                Di Holycat Labs, misi kami adalah menyediakan produk obat
+                berkualitas premium dan inovatif yang disesuaikan dengan
+                kebutuhan unik teman berbulu kesayangan Anda.
+              </span>
+              <span id="misiLanjutan" style="display: none">
+                Kami berupaya meningkatkan kesejahteraan kucing dengan
+                menawarkan solusi yang aman, efektif, dan terpercaya yang
+                mengutamakan kesehatan dan kebahagiaan mereka. Melalui
+                penelitian, pengembangan, dan edukasi berkelanjutan, kami
+                bertujuan memberdayakan pemilik hewan untuk membuat keputusan
+                yang tepat dan memberikan perawatan terbaik bagi kucing mereka,
+                memastikan mereka menjalani hidup yang penuh vitalitas dan
+                kebahagiaan.
+              </span>
+            </p>
+            <button
+              id="tombolMisi"
+              onclick="toggleMisi()"
+              class="read-more-btn"
+            >
+              Baca Selengkapnya
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="client-testimonials" id="testimonials">
       <div class="container">
         <div class="testimonial-header animate-from-bottom">
@@ -397,7 +399,8 @@
         </div>
       </div>
     </section>
-    <footer class="main-footer">
+
+    <footer class="main-footer" id="contact">
       <div class="container">
         <div class="footer-grid">
           <div class="footer-about">
@@ -461,60 +464,58 @@
         </div>
       </div>
     </footer>
-    <!-- Script -->
+
     <script>
       function toggleMenu() {
         document.querySelector(".nav-links").classList.toggle("active");
       }
+
+      // Mengganti innerHTML tombol Baca Selengkapnya menjadi hanya teks
       function toggleTeks() {
         var teksLanjutan = document.getElementById("teksLanjutan");
         var tombol = document.getElementById("tombolBacaSelengkapnya");
 
         if (teksLanjutan.style.display === "none") {
-          teksLanjutan.style.display = "inline"; // Tampilkan teks
-          tombol.innerHTML = "<u>Sembunyikan<u/>"; // Ganti teks tombol
+          teksLanjutan.style.display = "inline";
+          tombol.innerHTML = "Sembunyikan";
         } else {
-          teksLanjutan.style.display = "none"; // Sembunyikan teks
-          tombol.innerHTML = "<u>Baca Selengkapnya<u/>"; // Ganti teks tombol
+          teksLanjutan.style.display = "none";
+          tombol.innerHTML = "Baca Selengkapnya";
         }
       }
-      // Fungsi untuk Visi Misi
+
       function toggleMisi() {
         var teksLanjutan = document.getElementById("misiLanjutan");
         var tombol = document.getElementById("tombolMisi");
 
         if (teksLanjutan.style.display === "none") {
-          teksLanjutan.style.display = "inline"; // Tampilkan teks
-          tombol.innerHTML = "<u>Sembunyikan</u>"; // Ganti teks tombol
+          teksLanjutan.style.display = "inline";
+          tombol.innerHTML = "Sembunyikan";
         } else {
-          teksLanjutan.style.display = "none"; // Sembunyikan teks
-          tombol.innerHTML = "<u>Baca Selengkapnya</u>"; // Ganti teks tombol
+          teksLanjutan.style.display = "none";
+          tombol.innerHTML = "Baca Selengkapnya";
         }
       }
-      // --- FUNGSI ANIMASI ON-SCROLL ---
 
+      // FUNGSI ANIMASI ON-SCROLL
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
-            // Jika elemen sedang terlihat
             if (entry.isIntersecting) {
               entry.target.classList.add("is-visible");
-              // Hentikan pengamatan setelah elemen muncul
               observer.unobserve(entry.target);
             }
           });
         },
         {
-          threshold: 0.1, // Elemen akan dianggap terlihat jika 10% dari elemen berada di viewport
+          threshold: 0.1,
         }
       );
 
-      // Pilih semua elemen yang ingin diamati
       const animatedElements = document.querySelectorAll(
         ".animate-from-left, .animate-from-right, .animate-from-bottom"
       );
 
-      // Amati setiap elemen
       animatedElements.forEach((element) => {
         observer.observe(element);
       });

@@ -4,34 +4,22 @@
   nav {
     padding: 15px 30px;
   }
-
   .logo img {
     width: 180px;
     height: 60px;
   }
-
   .nav-links {
-    position: absolute;
     top: 75px;
-    left: 0;
-    right: 0;
-    background: #ffffff;
-    flex-direction: column;
-    align-items: center;
     padding: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: none;
     gap: 15px;
   }
-
   .nav-links.active {
     display: flex;
   }
-
   .book-btn {
     display: none;
   }
-
   .hamburger {
     display: flex;
   }
@@ -43,34 +31,44 @@
     text-align: center;
     height: auto;
   }
-
   .hero-text {
     max-width: 100%;
     margin-bottom: 40px;
   }
-
   .hero-text h1 {
     font-size: 45px;
   }
-
   .hero-text p {
     font-size: 20px;
   }
-
   .hero-image img {
     max-width: 350px;
+  }
+
+  /* Pet Section */
+  .pet-section {
+    padding: 60px 30px;
+    flex-direction: row;
+    gap: 2rem; /* Jarak antar card lebih baik diatur dengan gap */
+  }
+  .pet-card.one {
+    border-radius: 20px; /* Seragamkan sudut di tablet */
+  }
+  .pet-card.four {
+    border-radius: 20px; /* Seragamkan sudut di tablet */
+  }
+  .pet-card {
+    border-radius: 20px;
   }
 
   /* About Us */
   .about-us {
     padding: 60px 30px;
   }
-
   .about-content {
     justify-content: center;
     text-align: center;
   }
-
   .about-text h2 {
     font-size: 40px;
     border-left: none;
@@ -79,114 +77,76 @@
     padding-bottom: 10px;
     display: inline-block;
   }
-
   .about-text p {
     font-size: 20px;
   }
-
   .about-image img {
     width: 250px;
-  }
-  /* Pet Section */
-  .pet-section {
-    padding: 60px 30px;
-  }
-  .pet-card.one {
-    border-radius: 50px 50px 0px 0px;
-  }
-  .pet-card.four {
-    border-radius: 0px;
   }
 
   /* Vision Mission */
   .vision-mission {
     padding: 60px 30px;
   }
-
   .vision-mission .content {
     flex-direction: column;
     text-align: center;
   }
-
   .vision-mission .text h2 {
     font-size: 35px;
   }
-
   .vision-mission .text p {
     font-size: 20px;
   }
-
   .vision-mission .image {
     order: 2;
   }
-  /* Pet Section & Mission */
-  .pet-section {
-    flex-direction: row;
-    gap: 5rem;
-  }
-  .pet-card,
-  .pet-card.one,
-  .pet-card.four,
-  .pet-card.yellow {
-    border-radius: 20px;
-  }
 
-  .mission-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .mission-text {
-    order: -1;
-  }
-  /* Client Stats & Testimonials */
-  .client-stats {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .testimonials {
-    flex-direction: column;
-    align-items: center;
-  }
-  .featured-products {
+  /* Product Info */
+  .productinfo-section {
     padding: 60px 30px;
   }
-
-  .featured-header h2 {
+  .productinfo-header h2 {
     font-size: 40px;
   }
 
+  /* Featured Products */
+  .featured-products {
+    padding: 60px 30px;
+  }
+  .featured-header h2 {
+    font-size: 40px;
+  }
   .featured-grid {
     gap: 25px;
   }
-
   .product-item {
     flex: 0 1 45%; /* Dua kolom di tablet */
   }
+
+  /* Testimonials */
   .client-testimonials {
     padding: 60px 30px;
   }
-
+  .testimonial-header h2 {
+    font-size: 40px;
+  }
   .testimonials-grid {
     gap: 25px;
   }
 
+  /* Footer */
   .main-footer {
     padding: 40px 30px 20px 30px;
   }
-
   .footer-grid {
-    /* Mengubah ke susunan dua kolom */
     justify-content: space-around;
   }
-
   .footer-about {
-    flex: 1 1 100%; /* Kolom pertama mengambil lebar penuh untuk tampilan yang lebih baik */
+    flex: 1 1 100%;
     text-align: center;
     margin-bottom: 30px;
   }
-
   .footer-about .social-links {
     justify-content: center;
   }
@@ -198,67 +158,46 @@
   nav {
     padding: 12px 20px;
   }
-
   .logo img {
     width: 150px;
     height: 50px;
   }
-
-  .nav-links {
-    top: 65px;
-  }
-
-  .nav-links a {
-    font-size: 18px;
-  }
-
-  .hamburger span {
-    width: 22px;
-  }
+  /* ... nav-links, hamburger, dll. sama ... */
 
   /* Hero Section */
   .hero {
     padding: 40px 20px;
   }
-
   .hero-text h1 {
     font-size: 35px;
-    margin-bottom: 10px;
   }
-
   .hero-text p {
     font-size: 18px;
-    margin-bottom: 20px;
   }
-
   .hero-text .btn {
     padding: 10px 28px;
     font-size: 18px;
   }
-
   .hero-image img {
     max-width: 280px;
+  }
+
+  /* Pet Section */
+  .pet-section {
+    padding: 40px 20px;
+    gap: 1rem;
   }
 
   /* About Us */
   .about-us {
     padding: 40px 20px;
   }
-
   .about-text h2 {
     font-size: 32px;
   }
-
   .about-text p {
     font-size: 18px;
-    margin-bottom: 15px;
   }
-
-  .cta-btn {
-    padding: 12px 24px;
-    font-size: 18px;
-  }
-
   .about-image img {
     width: 220px;
   }
@@ -267,109 +206,96 @@
   .vision-mission {
     padding: 40px 20px;
   }
-
   .vision-mission .text h2 {
     font-size: 28px;
-    margin-bottom: 8px;
   }
-
   .vision-mission .text p {
     font-size: 18px;
-    margin-bottom: 20px;
   }
   .vision-mission .image img {
     height: 250px;
   }
-  .pet-section {
-    gap: 1rem;
-  }
-  featured-products {
+
+  /* Product Info */
+  .productinfo-section {
     padding: 40px 20px;
   }
+  .productinfo-header h2 {
+    font-size: 35px;
+  }
+  .productinfo-card {
+    max-width: 100%;
+  }
 
+  /* Featured Products */
+  .featured-products {
+    padding: 40px 20px;
+  }
   .featured-header h2 {
     font-size: 35px;
   }
-
   .product-item {
-    flex: 1 1 100%; /* Satu kolom penuh di mobile */
+    flex: 1 1 100%;
     max-width: none;
   }
+
+  /* Testimonials */
   .client-testimonials {
     padding: 40px 20px;
   }
-
   .testimonial-header h2 {
     font-size: 35px;
   }
-
   .testimonial-card {
-    max-width: none; /* Biarkan card mengambil lebar penuh */
+    max-width: none;
   }
+
+  /* Footer */
   .main-footer {
     padding: 40px 20px 15px 20px;
   }
-
   .footer-grid {
-    flex-direction: column; /* Semua menjadi satu kolom */
+    flex-direction: column;
     text-align: center;
     gap: 30px;
   }
-
   .footer-links,
   .footer-contact {
     flex: 1 1 100%;
   }
 
-  .footer-about {
-    margin-bottom: 0;
-  }
-
-  .footer-links ul {
-    text-align: center;
-  }
-}
-
-/* === EXTRA SMALL MOBILE (max-width: 360px) === */
-@media screen and (max-width: 360px) {
-  .logo img {
-    width: 130px;
-    height: 45px;
-  }
-
-  .hero-text h1 {
-    font-size: 30px;
-  }
-
-  .hero-text p {
-    font-size: 16px;
-  }
-
-  .hero-image img {
-    max-width: 240px;
-  }
-
-  .about-text h2 {
-    font-size: 28px;
-  }
-
-  .about-text p {
-    font-size: 16px;
-  }
-
-  .about-image img {
-    width: 200px;
-  }
-
-  .vision-mission .text h2 {
-    font-size: 24px;
-  }
-
-  .vision-mission .text p {
-    font-size: 16px;
-  }
-
-  .vision-mission .image img {
-    height: 250px;
+  /* === EXTRA SMALL MOBILE (max-width: 360px) === */
+  @media screen and (max-width: 360px) {
+    .logo img {
+      width: 130px;
+      height: 45px;
+    }
+    .hero-text h1 {
+      font-size: 30px;
+    }
+    .hero-text p {
+      font-size: 16px;
+    }
+    .hero-image img {
+      max-width: 240px;
+    }
+    .about-text h2 {
+      font-size: 28px;
+    }
+    .about-text p {
+      font-size: 16px;
+    }
+    .about-image img {
+      width: 200px;
+    }
+    .vision-mission .text h2 {
+      font-size: 24px;
+    }
+    .vision-mission .text p {
+      font-size: 16px;
+    }
+    .vision-mission .image img {
+      height: 250px;
+    }
   }
 }
