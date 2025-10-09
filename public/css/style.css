@@ -213,10 +213,12 @@ nav {
   height: 60px;
   object-fit: cover;
   margin-bottom: 10px;
-  border-radius: 50%;
 }
 .pet-card h3 {
   margin: 0;
+}
+.pet-card.four img {
+  width: 73px;
 }
 
 /* === MISSION SECTION === */
@@ -226,39 +228,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: #fff;
-  margin: 30px 20px;
-  padding: 20px;
-  gap: 15px;
-}
-.mission-btn {
-  background: #fdf7f1;
-  padding: 10px 20px;
-  border-radius: 25px;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.mission-btn img {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
 }
 .mission-text {
   flex: 1;
   text-align: center;
   font-size: 1.1rem;
-}
-.mission-pets {
-  display: flex;
-  gap: 10px;
-}
-.mission-pets img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
 }
 
 /* === ABOUT US SECTION === */
