@@ -174,8 +174,10 @@ nav {
 .productinfo-section,
 .featured-products,
 .client-testimonials,
+.guarantee-section,
 #products,
-#testimonials {
+#testimonials,
+#guarantee {
   scroll-margin-top: 75px;
 }
 
@@ -235,6 +237,233 @@ nav {
   flex: 1;
   text-align: center;
   font-size: 1.1rem;
+}
+
+/* === GUARANTEE SECTION === */
+.guarantee-section {
+  padding: 80px 60px;
+  background: linear-gradient(135deg, #ffffff 0%, var(--light-bg) 100%);
+}
+
+.guarantee-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.guarantee-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: var(--primary-green);
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 119, 71, 0.3);
+}
+
+.guarantee-badge i {
+  font-size: 40px;
+  color: white;
+}
+
+.guarantee-header h2 {
+  font-size: 50px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.guarantee-subtitle {
+  font-size: 24px;
+  color: #555;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.guarantee-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.guarantee-intro {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.guarantee-intro p {
+  font-size: 22px;
+  color: #333;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.guarantee-conditions {
+  margin-bottom: 60px;
+}
+
+.guarantee-conditions h3 {
+  font-size: 35px;
+  color: var(--primary-green);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.conditions-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.condition-card {
+  flex: 1 1 280px;
+  max-width: 320px;
+  background: white;
+  padding: 35px 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+  border-top: 4px solid var(--primary-yellow);
+}
+
+.condition-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.condition-icon {
+  width: 70px;
+  height: 70px;
+  background: var(--light-bg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.condition-icon i {
+  font-size: 32px;
+  color: var(--primary-green);
+}
+
+.condition-card h4 {
+  font-size: 26px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.condition-card p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.guarantee-process {
+  background: var(--primary-green);
+  color: white;
+  padding: 50px 40px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+.guarantee-process h3 {
+  font-size: 40px;
+  color: var(--primary-yellow);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.process-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.step {
+  flex: 1 1 220px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  background: var(--primary-yellow);
+  color: var(--text-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Lilita One", cursive;
+}
+
+.step-content h4 {
+  font-size: 24px;
+  color: var(--primary-yellow);
+  margin-bottom: 8px;
+}
+
+.step-content p {
+  font-size: 18px;
+  color: white;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.guarantee-cta {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cta-text {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+.cta-text i {
+  color: #ff6b6b;
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.guarantee-btn {
+  display: inline-block;
+  background: #25d366;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+}
+
+.guarantee-btn:hover {
+  background: #1ebe5b;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+}
+
+.guarantee-btn i {
+  margin-right: 8px;
 }
 
 /* === ABOUT US SECTION === */

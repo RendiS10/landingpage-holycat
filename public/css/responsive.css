@@ -65,13 +65,13 @@
   .pet-section {
     padding: 60px 30px;
     flex-direction: row;
-    gap: 2rem; /* Jarak antar card lebih baik diatur dengan gap */
+    gap: 2rem;
   }
   .pet-card.one {
-    border-radius: 20px; /* Seragamkan sudut di tablet */
+    border-radius: 20px;
   }
   .pet-card.four {
-    border-radius: 20px; /* Seragamkan sudut di tablet */
+    border-radius: 20px;
   }
   .pet-card {
     border-radius: 20px;
@@ -137,7 +137,7 @@
     gap: 25px;
   }
   .product-item {
-    flex: 0 1 40%; /* Dua kolom di tablet */
+    flex: 0 1 40%;
   }
 
   /* Testimonials */
@@ -149,6 +149,35 @@
   }
   .testimonials-grid {
     gap: 25px;
+  }
+
+  /* Guarantee Section */
+  .guarantee-section {
+    padding: 60px 30px;
+  }
+  .guarantee-header h2 {
+    font-size: 40px;
+  }
+  .guarantee-subtitle {
+    font-size: 20px;
+  }
+  .guarantee-intro p {
+    font-size: 20px;
+  }
+  .guarantee-conditions h3 {
+    font-size: 30px;
+  }
+  .guarantee-process {
+    padding: 40px 30px;
+  }
+  .guarantee-process h3 {
+    font-size: 35px;
+  }
+  .process-steps {
+    flex-direction: column;
+  }
+  .cta-text {
+    font-size: 20px;
   }
 
   /* Footer */
@@ -284,6 +313,82 @@
     max-width: none;
   }
 
+  /* Guarantee Section */
+  .guarantee-section {
+    padding: 40px 20px;
+  }
+  .guarantee-badge {
+    width: 70px;
+    height: 70px;
+  }
+  .guarantee-badge i {
+    font-size: 35px;
+  }
+  .guarantee-header h2 {
+    font-size: 35px;
+  }
+  .guarantee-subtitle {
+    font-size: 18px;
+  }
+  .guarantee-intro {
+    padding: 25px 20px;
+  }
+  .guarantee-intro p {
+    font-size: 18px;
+  }
+  .guarantee-conditions h3 {
+    font-size: 28px;
+  }
+  .condition-card {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+  .condition-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .condition-icon i {
+    font-size: 28px;
+  }
+  .condition-card h4 {
+    font-size: 24px;
+  }
+  .condition-card p {
+    font-size: 17px;
+  }
+  .guarantee-process {
+    padding: 30px 20px;
+  }
+  .guarantee-process h3 {
+    font-size: 30px;
+  }
+  .step {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .step-number {
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+  }
+  .step-content h4 {
+    font-size: 22px;
+  }
+  .step-content p {
+    font-size: 17px;
+  }
+  .guarantee-cta {
+    padding: 30px 20px;
+  }
+  .cta-text {
+    font-size: 18px;
+  }
+  .guarantee-btn {
+    padding: 12px 30px;
+    font-size: 18px;
+  }
+
   /* Footer */
   .main-footer {
     padding: 40px 20px 15px 20px;
@@ -297,46 +402,107 @@
   .footer-contact {
     flex: 1 1 100%;
   }
+}
 
-  /* === EXTRA SMALL MOBILE (max-width: 360px) === */
-  @media screen and (max-width: 360px) {
-    .pet-card {
-      max-width: 100px;
-    }
-    .pet-card h3 {
-      font-size: 8px;
-      margin: 0;
-    }
-    .logo img {
-      width: 130px;
-      height: 45px;
-    }
-    .hero-text h1 {
-      font-size: 30px;
-    }
-    .hero-text p {
-      font-size: 16px;
-    }
-    .hero-image img {
-      max-width: 240px;
-    }
-    .about-text h2 {
-      font-size: 28px;
-    }
-    .about-text p {
-      font-size: 16px;
-    }
-    .about-image img {
-      width: 200px;
-    }
-    .vision-mission .text h2 {
-      font-size: 24px;
-    }
-    .vision-mission .text p {
-      font-size: 16px;
-    }
-    .vision-mission .image img {
-      height: 250px;
-    }
+/* === EXTRA SMALL MOBILE (max-width: 360px) === */
+@media screen and (max-width: 360px) {
+  .pet-card {
+    max-width: 100px;
+  }
+  .pet-card h3 {
+    font-size: 8px;
+    margin: 0;
+  }
+  .logo img {
+    width: 130px;
+    height: 45px;
+  }
+  .hero-text h1 {
+    font-size: 30px;
+  }
+  .hero-text p {
+    font-size: 16px;
+  }
+  .hero-image img {
+    max-width: 240px;
+  }
+  .about-text h2 {
+    font-size: 28px;
+  }
+  .about-text p {
+    font-size: 16px;
+  }
+  .about-image img {
+    width: 200px;
+  }
+  .vision-mission .text h2 {
+    font-size: 24px;
+  }
+  .vision-mission .text p {
+    font-size: 16px;
+  }
+  .vision-mission .image img {
+    height: 250px;
+  }
+
+  /* Guarantee Section - Extra Small */
+  .guarantee-badge {
+    width: 60px;
+    height: 60px;
+  }
+  .guarantee-badge i {
+    font-size: 30px;
+  }
+  .guarantee-header h2 {
+    font-size: 30px;
+  }
+  .guarantee-subtitle {
+    font-size: 16px;
+  }
+  .guarantee-intro {
+    padding: 20px 15px;
+  }
+  .guarantee-intro p {
+    font-size: 16px;
+  }
+  .guarantee-conditions h3 {
+    font-size: 24px;
+  }
+  .condition-icon {
+    width: 55px;
+    height: 55px;
+  }
+  .condition-icon i {
+    font-size: 24px;
+  }
+  .condition-card h4 {
+    font-size: 22px;
+  }
+  .condition-card p {
+    font-size: 16px;
+  }
+  .guarantee-process {
+    padding: 25px 15px;
+  }
+  .guarantee-process h3 {
+    font-size: 26px;
+  }
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .step-content h4 {
+    font-size: 20px;
+  }
+  .step-content p {
+    font-size: 16px;
+  }
+  .cta-text {
+    font-size: 16px;
+  }
+  .guarantee-btn {
+    padding: 10px 25px;
+    font-size: 16px;
   }
 }
