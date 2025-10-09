@@ -188,8 +188,7 @@ nav {
 /* Card umum */
 .pet-card {
   flex: 1 1 200px;
-  min-width: 220px;
-  max-width: 250px;
+  width: 250px;
   background: #44af7c;
   color: #fff;
   padding: 20px;
@@ -753,4 +752,18 @@ nav {
 
 .contact-box a:hover {
   background: #1ebe5b;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(37, 211, 102, 0.6);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.9);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(37, 211, 102, 0.6);
+  }
 }
