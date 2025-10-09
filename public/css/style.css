@@ -228,6 +228,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: #fff;
+  flex-direction: column;
 }
 .mission-text {
   flex: 1;
@@ -727,4 +728,29 @@ nav {
 .footer-bottom p {
   font-size: 16px;
   margin: 0;
+}
+/* Kontak */
+.contact-box {
+  font-size: 1rem;
+  color: #2f4f4f;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-box a {
+  display: inline-block;
+  margin-top: 8px;
+  text-decoration: none;
+  background: #25d366;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+  animation: pulse 2s infinite;
+  letter-spacing: 0.5px;
+}
+
+.contact-box a:hover {
+  background: #1ebe5b;
 }
