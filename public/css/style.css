@@ -173,7 +173,9 @@ nav {
 .vision-mission,
 .productinfo-section,
 .featured-products,
-.client-testimonials {
+.client-testimonials,
+#products,
+#testimonials {
   scroll-margin-top: 75px;
 }
 
