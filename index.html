@@ -30,7 +30,7 @@
         <li><a href="#">Home</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#products">Our Products</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="./src/contact.html">Store dan Social Media</a></li>
       </ul>
 
       <div class="book-btn">
@@ -210,7 +210,7 @@
 
               <div class="feature-item">
                 <div class="feature-icon">
-                  <i class="fas fa-shield-check"></i>
+                  <i class="fas fa-shield-alt"></i>
                 </div>
                 <div class="feature-content">
                   <h4>Komitmen Keamanan</h4>
@@ -238,7 +238,7 @@
             </div>
 
             <div class="kementan-cta">
-              <a href="#products" class="primary-btn">
+              <a href="./src/contact.html" class="primary-btn">
                 <i class="fas fa-box-open"></i> Lihat Produk Resmi Kami
               </a>
             </div>
@@ -539,7 +539,7 @@
             </p>
           </div>
 
-          <div class="guarantee-conditions">
+          <div class="guarantee-conditions" id="garansiKondisi">
             <h3 class="animate-from-bottom">
               Kami Memberikan Garansi Uang Kembali untuk:
             </h3>
@@ -639,21 +639,6 @@
         </div>
       </div>
     </section>
-    <section class="mission-section">
-      <div class="mission-text">
-        <h3>
-          Kami Juga Menghadirkan Sesi Konsultasi Bersama Dokter Hewan
-          Profesional!
-        </h3>
-      </div>
-      <!-- Kontak -->
-      <div class="contact-box">
-        <a href="https://wa.me/6285171002858" target="_blank">
-          <i class="fab fa-whatsapp"></i> Chat via WhatsApp Sekarang
-        </a>
-      </div>
-    </section>
-
     <section class="vision-mission">
       <div class="container">
         <div class="content">
@@ -715,15 +700,21 @@
               terlengkap bagi kucing kesayangan Anda.
             </p>
             <div class="social-links">
-              <a href="#" aria-label="Instagram"
-                ><img src="./public/images/instagram-icon.png" alt="Instagram"
-              /></a>
-              <a href="#" aria-label="Facebook"
-                ><img src="./public/images/facebook-icon.png" alt="Facebook"
-              /></a>
-              <a href="#" aria-label="Tiktok"
-                ><img src="./public/images/tiktok-icon.png" alt="Tiktok"
-              /></a>
+              <a
+                href="https://www.instagram.com/holycat_official/ "
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100090287932346"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.tiktok.com/@holycatofficial"
+                aria-label="Tiktok"
+                ><i class="fab fa-tiktok"></i>
+              </a>
             </div>
           </div>
 
@@ -740,20 +731,23 @@
           <div class="footer-links">
             <h4>Bantuan</h4>
             <ul>
-              <li><a href="#">FAQ</a></li>
+              <li><a href="./src/contact.html">FAQ</a></li>
               <li><a href="#">Kebijakan Privasi</a></li>
               <li><a href="#">Syarat & Ketentuan</a></li>
-              <li><a href="#">Pengembalian Produk</a></li>
+              <li><a href="#garansiKondisi">Pengembalian Produk</a></li>
             </ul>
           </div>
 
           <div class="footer-contact">
             <h4>Hubungi Kami</h4>
             <p>
-              <i class="icon-phone"></i> +62 812-3456-7890<br />
+              <i class="icon-phone"></i> +6285171002858<br />
               <i class="icon-email"></i> hello@holycatlabs.com
             </p>
-            <p><i class="icon-location"></i> Banjar, West Java, Indonesia</p>
+            <p>
+              <i class="icon-location"></i> Jl. AH. Nasution No.KM.10,
+              Pakemitan, Kec. Cinambo, Kota Bandung, Jawa Barat 40294
+            </p>
           </div>
         </div>
 
@@ -762,7 +756,14 @@
         </div>
       </div>
     </footer>
-
+    <a
+      href="https://wa.me/6285171002858"
+      target="_blank"
+      class="whatsapp-float"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <span>Konsultasi Gratis Sekarang!</span>
+    </a>
     <script>
       function toggleMenu() {
         document.querySelector(".nav-links").classList.toggle("active");

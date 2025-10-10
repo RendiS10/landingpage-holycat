@@ -246,11 +246,57 @@
   }
   .footer-about .social-links {
     justify-content: center;
+  } /* E-commerce & Social Section */
+  .e-commerce-social {
+    padding: 60px 30px;
+    min-height: auto; /* Hapus min-height untuk ponsel/tablet */
+  }
+  .store-social-header h2 {
+    font-size: 40px;
+  }
+  .store-grid {
+    gap: 20px;
+  }
+  .platform-card {
+    flex: 1 1 45%;
+    max-width: none;
+  }
+  .social-grid {
+    gap: 20px;
+  }
+  .social-card {
+    flex: 1 1 100px;
   }
 }
 
 /* === MOBILE (max-width: 480px) === */
 @media screen and (max-width: 480px) {
+  /* E-commerce & Social Section */
+  .e-commerce-social {
+    padding: 40px 20px;
+  }
+  .store-social-header h2 {
+    font-size: 35px;
+  }
+  .store-grid-container h3,
+  .social-grid-container h3 {
+    font-size: 30px;
+  }
+  .platform-card {
+    flex: 1 1 100%;
+  }
+  .social-grid {
+    gap: 15px;
+  }
+  .social-card {
+    flex: 1 1 40%;
+  }
+  .social-card i {
+    font-size: 35px;
+  }
+  .social-card p {
+    font-size: 18px;
+  }
   .pet-card {
     max-width: 100px;
   }
@@ -458,6 +504,20 @@
 
 /* === EXTRA SMALL MOBILE (max-width: 360px) === */
 @media screen and (max-width: 360px) {
+  /* E-commerce & Social Section - Extra Small */
+  .store-social-header h2 {
+    font-size: 30px;
+  }
+  .store-grid-container h3,
+  .social-grid-container h3 {
+    font-size: 26px;
+  }
+  .platform-card h4 {
+    font-size: 24px;
+  }
+  .social-card {
+    flex: 1 1 120px;
+  }
   .pet-card {
     max-width: 100px;
   }
