@@ -180,6 +180,58 @@
     font-size: 20px;
   }
 
+  /* Kementan Section */
+  .kementan-section {
+    padding: 60px 30px;
+  }
+  .kementan-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .kementan-text h2 {
+    font-size: 40px;
+  }
+  .intro-text {
+    font-size: 20px;
+  }
+  .feature-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .certificate-badge {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  /* Consultation Section */
+  .consultation-section {
+    padding: 60px 30px;
+  }
+  .consultation-header h2 {
+    font-size: 40px;
+  }
+  .consultation-subtitle {
+    font-size: 20px;
+  }
+  .consultation-intro p {
+    font-size: 19px;
+  }
+  .qr-section {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .qr-container {
+    flex: 0 0 auto;
+  }
+  .qr-text {
+    text-align: center;
+  }
+  .qr-text ol {
+    text-align: left;
+  }
+
   /* Footer */
   .main-footer {
     padding: 40px 30px 20px 30px;

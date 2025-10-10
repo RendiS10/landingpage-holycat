@@ -57,7 +57,6 @@
         <img src="./public/images/hero-gemini.png" alt="Happy Cat" />
       </div>
     </section>
-
     <section class="pet-section" id="pet-section">
       <div class="pet-card one animate-from-bottom">
         <img src="./public/images/love.png" alt="Kucing Love" />
@@ -79,22 +78,6 @@
         <h3>Rekomendasi&nbsp;Dokter&nbsp;Hewan</h3>
       </div>
     </section>
-
-    <section class="mission-section">
-      <div class="mission-text">
-        <h3>
-          Kami Juga Menghadirkan Sesi Konsultasi Bersama Dokter Hewan
-          Profesional!
-        </h3>
-      </div>
-      <!-- Kontak -->
-      <div class="contact-box">
-        <a href="https://wa.me/6285171002858" target="_blank">
-          <i class="fab fa-whatsapp"></i> Chat via WhatsApp Sekarang
-        </a>
-      </div>
-    </section>
-
     <section class="productinfo-section" id="products">
       <div class="container">
         <div class="productinfo-header">
@@ -142,6 +125,123 @@
               />
             </div>
             <h3>Grooming</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-us" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text animate-from-left">
+            <h2>Tentang <b>Holycatlabs</b></h2>
+            <p>
+              <span id="teksSingkat">
+                Di Holycat Labs, kami sepenuh hati mendedikasikan diri untuk
+                menyediakan rangkaian produk kesehatan yang komprehensif bagi
+                hewan peliharaan kesayangan Anda.
+              </span>
+              <span id="teksLanjutan" style="display: none">
+                Misi kami adalah menghadirkan produk berkualitas tinggi yang
+                dapat Anda percaya sepenuhnya, dengan harga yang selalu
+                terjangkau. Setiap produk kami diracik dengan cermat oleh para
+                profesional ahli di industri ini, menjamin keamanan dan
+                efektivitas untuk anabul Anda. Kami bangga menyajikan solusi
+                premium yang memenuhi beragam kebutuhan kesehatan sahabat
+                berbulu Anda, menjadikan kami pilihan utama bagi para pecinta
+                hewan. Pilih Holycat Labs untuk obat hewan peliharaan yang
+                terpercaya, hemat biaya, dan selalu bisa diandalkan oleh Anda
+                serta kucing kesayangan Anda!
+              </span>
+            </p>
+            <button
+              id="tombolBacaSelengkapnya"
+              onclick="toggleTeks()"
+              class="read-more-btn"
+            >
+              Baca Selengkapnya
+            </button>
+          </div>
+          <div class="about-image animate-from-right">
+            <img src="./public/images/aboutus2.png" alt="About Happy Pet" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="kementan-section" id="kementan">
+      <div class="container">
+        <div class="kementan-content">
+          <div class="kementan-image animate-from-left">
+            <div class="certificate-badge">
+              <i class="fas fa-certificate"></i>
+              <span class="badge-text">RESMI</span>
+            </div>
+            <img
+              src="./public/images/aboutus2.png"
+              alt="Produk Berizin Kementan"
+            />
+          </div>
+
+          <div class="kementan-text animate-from-right">
+            <div class="section-label">
+              <i class="fas fa-stamp"></i> Legalitas Terjamin
+            </div>
+            <h2>Holycat Resmi Berizin Kementan</h2>
+            <p class="intro-text">
+              Langkah kecil untuk kami, tapi
+              <strong>besar untuk kepercayaanmu</strong>. Kini, seluruh produk
+              Holycat telah resmi terdaftar dan berizin Kementan.
+            </p>
+
+            <div class="kementan-features">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-flask"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Uji Kualitas Ketat</h4>
+                  <p>
+                    Setiap formula melalui proses uji kualitas, keamanan, dan
+                    efektivitas sesuai standar nasional untuk produk kesehatan
+                    hewan
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-shield-check"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Komitmen Keamanan</h4>
+                  <p>
+                    Izin resmi bukan sekadar formalitas, ini bentuk komitmen
+                    kami menghadirkan produk yang benar-benar aman, terpercaya,
+                    dan efektif
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-award"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Jaminan Mutu Nasional</h4>
+                  <p>
+                    Tidak perlu ragu akan kualitas bahan, cara kerja, dan
+                    keamanan produk. Setiap tetes, kapsul, semprotan memiliki
+                    jaminan mutu yang diakui negara
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="kementan-cta">
+              <a href="#products" class="primary-btn">
+                <i class="fas fa-box-open"></i> Lihat Produk Resmi Kami
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -230,92 +330,106 @@
       </div>
     </section>
 
-    <section class="about-us" id="about">
+    <section class="consultation-section" id="consultation">
       <div class="container">
-        <div class="about-content">
-          <div class="about-text animate-from-left">
-            <h2>Tentang <b>Holycatlabs</b></h2>
-            <p>
-              <span id="teksSingkat">
-                Di Holycat Labs, kami sepenuh hati mendedikasikan diri untuk
-                menyediakan rangkaian produk kesehatan yang komprehensif bagi
-                hewan peliharaan kesayangan Anda.
-              </span>
-              <span id="teksLanjutan" style="display: none">
-                Misi kami adalah menghadirkan produk berkualitas tinggi yang
-                dapat Anda percaya sepenuhnya, dengan harga yang selalu
-                terjangkau. Setiap produk kami diracik dengan cermat oleh para
-                profesional ahli di industri ini, menjamin keamanan dan
-                efektivitas untuk anabul Anda. Kami bangga menyajikan solusi
-                premium yang memenuhi beragam kebutuhan kesehatan sahabat
-                berbulu Anda, menjadikan kami pilihan utama bagi para pecinta
-                hewan. Pilih Holycat Labs untuk obat hewan peliharaan yang
-                terpercaya, hemat biaya, dan selalu bisa diandalkan oleh Anda
-                serta kucing kesayangan Anda!
-              </span>
-            </p>
-            <button
-              id="tombolBacaSelengkapnya"
-              onclick="toggleTeks()"
-              class="read-more-btn"
-            >
-              Baca Selengkapnya
-            </button>
+        <div class="consultation-header animate-from-bottom">
+          <div class="consultation-badge">
+            <i class="fas fa-user-md"></i>
           </div>
-          <div class="about-image animate-from-right">
-            <img src="./public/images/aboutus2.png" alt="About Happy Pet" />
+          <h2>Gratis Konsultasi Kesehatan Kucing 24 Jam</h2>
+          <p class="consultation-subtitle">
+            Komitmen Holycat adalah menjadi solusi yang tepat untuk menjadikan
+            kucing sehat — dan itu kami buktikan dengan kemudahan mengakses
+            konsultasi bersama dokter hewan
+          </p>
+        </div>
+
+        <div class="consultation-content">
+          <div class="consultation-intro animate-from-left">
+            <p>
+              Kami percaya, setiap kucing berhak mendapatkan perhatian yang
+              tepat, dimulai dari pemahaman yang benar atas kondisi mereka.
+              Banyak pemilik kucing yang merasa bingung ketika melihat
+              tanda-tanda seperti bulu rontok, nafsu makan menurun, atau
+              perilaku yang tiba-tiba berubah.
+            </p>
+            <p class="highlight-text">
+              <i class="fas fa-heart"></i> Di sinilah Holycat hadir — bukan
+              hanya lewat produk, tapi juga lewat
+              <strong
+                >pendampingan nyata yang bisa kamu akses kapan saja, tanpa
+                biaya</strong
+              >.
+            </p>
+          </div>
+
+          <div class="consultation-grid">
+            <div
+              class="consultation-card animate-from-bottom"
+              style="--animation-delay: 0.1s"
+            >
+              <div class="card-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3>24/7 Siap Bantu</h3>
+              <p>
+                Tim kami dan dokter hewan berpengalaman siap memberikan saran
+                kapan saja kamu membutuhkannya
+              </p>
+            </div>
+
+            <div
+              class="consultation-card animate-from-bottom"
+              style="--animation-delay: 0.3s"
+            >
+              <div class="card-icon">
+                <i class="fas fa-qrcode"></i>
+              </div>
+              <h3>Akses Mudah</h3>
+              <p>
+                Scan barcode di kemasan produk Holycat atau di halaman ini untuk
+                langsung terhubung dengan tim kami
+              </p>
+            </div>
+
+            <div
+              class="consultation-card animate-from-bottom"
+              style="--animation-delay: 0.5s"
+            >
+              <div class="card-icon">
+                <i class="fas fa-gift"></i>
+              </div>
+              <h3>100% Gratis</h3>
+              <p>
+                Tidak ada biaya tersembunyi. Konsultasi sepenuhnya gratis untuk
+                semua pengguna produk Holycat
+              </p>
+            </div>
+          </div>
+
+          <div class="qr-section animate-from-right">
+            <div class="qr-container">
+              <div class="qr-placeholder">
+                <i class="fas fa-qrcode"></i>
+                <p>Scan QR Code untuk Konsultasi</p>
+              </div>
+            </div>
+            <div class="qr-text">
+              <h3>Cara Konsultasi:</h3>
+              <ol>
+                <li>Scan QR Code di samping atau di kemasan produk</li>
+                <li>Terhubung langsung dengan tim Holycat via WhatsApp</li>
+                <li>Ceritakan kondisi kucing kamu</li>
+                <li>Dapatkan saran dan solusi dari ahlinya</li>
+              </ol>
+              <a href="https://wa.me/6285171002858" class="consult-btn">
+                <i class="fab fa-whatsapp"></i> Konsultasi Sekarang
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="vision-mission">
-      <div class="container">
-        <div class="content">
-          <div class="image animate-from-left">
-            <img
-              src="./public/images/visi-misi.png"
-              alt="Holycat Labs Illustration"
-            />
-          </div>
-          <div class="text animate-from-right">
-            <h2>Visi Kami</h2>
-            <p>
-              Menjadi advokat terdepan untuk kesehatan dan kebahagiaan kucing,
-              merintis solusi inovatif, dan membina ikatan yang lebih dalam
-              antara kucing dan pemiliknya.
-            </p>
-
-            <h2>Misi Kami</h2>
-            <p id="misiParagraf">
-              <span id="misiSingkat">
-                Di Holycat Labs, misi kami adalah menyediakan produk obat
-                berkualitas premium dan inovatif yang disesuaikan dengan
-                kebutuhan unik teman berbulu kesayangan Anda.
-              </span>
-              <span id="misiLanjutan" style="display: none">
-                Kami berupaya meningkatkan kesejahteraan kucing dengan
-                menawarkan solusi yang aman, efektif, dan terpercaya yang
-                mengutamakan kesehatan dan kebahagiaan mereka. Melalui
-                penelitian, pengembangan, dan edukasi berkelanjutan, kami
-                bertujuan memberdayakan pemilik hewan untuk membuat keputusan
-                yang tepat dan memberikan perawatan terbaik bagi kucing mereka,
-                memastikan mereka menjalani hidup yang penuh vitalitas dan
-                kebahagiaan.
-              </span>
-            </p>
-            <button
-              id="tombolMisi"
-              onclick="toggleMisi()"
-              class="read-more-btn"
-            >
-              Baca Selengkapnya
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="client-testimonials" id="testimonials">
       <div class="container">
         <div class="testimonial-header animate-from-bottom">
@@ -525,6 +639,68 @@
         </div>
       </div>
     </section>
+    <section class="mission-section">
+      <div class="mission-text">
+        <h3>
+          Kami Juga Menghadirkan Sesi Konsultasi Bersama Dokter Hewan
+          Profesional!
+        </h3>
+      </div>
+      <!-- Kontak -->
+      <div class="contact-box">
+        <a href="https://wa.me/6285171002858" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat via WhatsApp Sekarang
+        </a>
+      </div>
+    </section>
+
+    <section class="vision-mission">
+      <div class="container">
+        <div class="content">
+          <div class="image animate-from-left">
+            <img
+              src="./public/images/visi-misi.png"
+              alt="Holycat Labs Illustration"
+            />
+          </div>
+          <div class="text animate-from-right">
+            <h2>Visi Kami</h2>
+            <p>
+              Menjadi advokat terdepan untuk kesehatan dan kebahagiaan kucing,
+              merintis solusi inovatif, dan membina ikatan yang lebih dalam
+              antara kucing dan pemiliknya.
+            </p>
+
+            <h2>Misi Kami</h2>
+            <p id="misiParagraf">
+              <span id="misiSingkat">
+                Di Holycat Labs, misi kami adalah menyediakan produk obat
+                berkualitas premium dan inovatif yang disesuaikan dengan
+                kebutuhan unik teman berbulu kesayangan Anda.
+              </span>
+              <span id="misiLanjutan" style="display: none">
+                Kami berupaya meningkatkan kesejahteraan kucing dengan
+                menawarkan solusi yang aman, efektif, dan terpercaya yang
+                mengutamakan kesehatan dan kebahagiaan mereka. Melalui
+                penelitian, pengembangan, dan edukasi berkelanjutan, kami
+                bertujuan memberdayakan pemilik hewan untuk membuat keputusan
+                yang tepat dan memberikan perawatan terbaik bagi kucing mereka,
+                memastikan mereka menjalani hidup yang penuh vitalitas dan
+                kebahagiaan.
+              </span>
+            </p>
+            <button
+              id="tombolMisi"
+              onclick="toggleMisi()"
+              class="read-more-btn"
+            >
+              Baca Selengkapnya
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="main-footer" id="contact">
       <div class="container">
         <div class="footer-grid">
@@ -577,7 +753,7 @@
               <i class="icon-phone"></i> +62 812-3456-7890<br />
               <i class="icon-email"></i> hello@holycatlabs.com
             </p>
-            <p><i class="icon-location"></i> tes</p>
+            <p><i class="icon-location"></i> Banjar, West Java, Indonesia</p>
           </div>
         </div>
 
