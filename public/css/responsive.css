@@ -1,0 +1,678 @@
+/* ============================================
+   RESPONSIVE STYLES - HOLYCATLABS
+   ============================================ */
+
+/* === TABLET (max-width: 768px) === */
+@media screen and (max-width: 768px) {
+  /* === NAVBAR === */
+  nav {
+    padding: 15px 30px;
+  }
+
+  .logo img {
+    width: 180px;
+    height: 60px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    gap: 15px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .book-btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* === HERO SECTION === */
+  .hero {
+    flex-direction: column;
+    padding: 50px 30px;
+    text-align: center;
+    min-height: auto;
+    gap: 2rem;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 45px;
+  }
+
+  .hero-text p {
+    font-size: 20px;
+  }
+
+  .hero-image img {
+    max-width: 350px;
+  }
+
+  /* === PET SECTION === */
+  .pet-section {
+    padding: 0;
+    gap: 1rem;
+  }
+
+  .pet-card {
+    border-radius: 20px;
+    padding: 20px 15px;
+  }
+
+  .pet-card.one,
+  .pet-card.four {
+    border-radius: 20px;
+  }
+
+  .pet-card h3 {
+    font-size: 20px;
+  }
+
+  /* === ABOUT US === */
+  .about-us {
+    padding: 60px 30px;
+  }
+
+  .about-content {
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .about-text h2 {
+    font-size: 40px;
+    border-left: none;
+    border-bottom: 6px solid var(--primary-green);
+    padding-left: 0;
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+
+  .about-text p {
+    font-size: 20px;
+  }
+
+  .about-image img {
+    width: 250px;
+  }
+
+  /* === KEMENTAN SECTION === */
+  .kementan-section {
+    padding: 60px 30px;
+  }
+
+  .kementan-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .kementan-text h2 {
+    font-size: 40px;
+  }
+
+  .intro-text {
+    font-size: 20px;
+  }
+
+  .feature-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .certificate-badge {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  /* === PRODUCT INFO === */
+  .productinfo-section {
+    padding: 60px 30px;
+  }
+
+  .productinfo-header h2 {
+    font-size: 40px;
+  }
+
+  .productinfo-card {
+    flex: 1 1 200px;
+  }
+
+  /* === FEATURED PRODUCTS === */
+  .featured-products {
+    padding: 60px 30px;
+  }
+
+  .featured-header h2 {
+    font-size: 40px;
+  }
+
+  .featured-grid {
+    gap: 25px;
+  }
+
+  .product-item {
+    flex: 0 1 45%;
+  }
+
+  /* === CONSULTATION SECTION === */
+  .consultation-section {
+    padding: 60px 30px;
+  }
+
+  .consultation-header h2 {
+    font-size: 40px;
+  }
+
+  .consultation-subtitle {
+    font-size: 20px;
+  }
+
+  .consultation-intro p {
+    font-size: 19px;
+  }
+
+  .qr-section {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .qr-container {
+    flex: 0 0 auto;
+  }
+
+  .qr-text {
+    text-align: center;
+  }
+
+  .qr-text ol {
+    text-align: left;
+  }
+
+  /* === TESTIMONIALS === */
+  .client-testimonials {
+    padding: 60px 30px;
+  }
+
+  .testimonial-header h2 {
+    font-size: 40px;
+  }
+
+  .testimonials-grid {
+    gap: 25px;
+  }
+
+  /* === GUARANTEE SECTION === */
+  .guarantee-section {
+    padding: 60px 30px;
+  }
+
+  .guarantee-header h2 {
+    font-size: 40px;
+  }
+
+  .guarantee-subtitle {
+    font-size: 20px;
+  }
+
+  .guarantee-intro p {
+    font-size: 20px;
+  }
+
+  .guarantee-conditions h3 {
+    font-size: 30px;
+  }
+
+  .guarantee-process {
+    padding: 40px 30px;
+  }
+
+  .guarantee-process h3 {
+    font-size: 35px;
+  }
+
+  .process-steps {
+    flex-direction: column;
+  }
+
+  .cta-text {
+    font-size: 20px;
+  }
+
+  /* === VISION MISSION === */
+  .vision-mission {
+    padding: 60px 30px;
+  }
+
+  .vision-mission .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vision-mission .text h2 {
+    font-size: 35px;
+  }
+
+  .vision-mission .text p {
+    font-size: 20px;
+  }
+
+  .vision-mission .image {
+    order: 2;
+  }
+
+  /* === E-COMMERCE & SOCIAL === */
+  .e-commerce-social {
+    padding: 60px 30px;
+    min-height: auto;
+  }
+
+  .store-social-header h2 {
+    font-size: 40px;
+  }
+
+  .store-grid {
+    gap: 20px;
+  }
+
+  .platform-card {
+    flex: 1 1 45%;
+    max-width: none;
+  }
+
+  .social-grid {
+    gap: 20px;
+  }
+
+  .social-card {
+    flex: 1 1 100px;
+  }
+
+  /* === FOOTER === */
+  .main-footer {
+    padding: 40px 30px 20px;
+  }
+
+  .footer-grid {
+    justify-content: space-around;
+  }
+
+  .footer-about {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .footer-about .social-links {
+    justify-content: center;
+  }
+}
+
+/* === MOBILE (max-width: 480px) === */
+@media screen and (max-width: 480px) {
+  /* E-commerce & Social Section */
+  .e-commerce-social {
+    padding: 40px 20px;
+  }
+  .store-social-header h2 {
+    font-size: 35px;
+  }
+  .store-grid-container h3,
+  .social-grid-container h3 {
+    font-size: 30px;
+  }
+  .platform-card {
+    flex: 1 1 100%;
+  }
+  .social-grid {
+    gap: 15px;
+  }
+  .social-card {
+    flex: 1 1 40%;
+  }
+  .social-card i {
+    font-size: 35px;
+  }
+  .social-card p {
+    font-size: 18px;
+  }
+  .pet-card {
+    max-width: 100px;
+  }
+  .pet-card h3 {
+    font-size: 8px;
+    margin: 0;
+  }
+  /* Navbar */
+  nav {
+    padding: 12px 20px;
+  }
+
+  .logo img {
+    width: 150px;
+    height: 50px;
+  }
+
+  .nav-links {
+    top: 65px;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+  }
+
+  .hamburger span {
+    width: 22px;
+  }
+  /* Hero Section */
+  .hero {
+    padding: 40px 20px;
+    gap: 1rem;
+  }
+  .hero-text h1 {
+    font-size: 35px;
+  }
+  .hero-text p {
+    font-size: 18px;
+  }
+  .hero-text .btn {
+    padding: 10px 28px;
+    font-size: 18px;
+  }
+  .hero-image img {
+    max-width: 280px;
+  }
+
+  /* Pet Section */
+  .pet-section {
+    padding: 40px 20px;
+    gap: 1rem;
+  }
+
+  /* About Us */
+  .about-us {
+    padding: 40px 20px;
+  }
+  .about-text h2 {
+    font-size: 32px;
+  }
+  .about-text p {
+    font-size: 18px;
+  }
+  .about-image img {
+    width: 220px;
+  }
+
+  /* Vision Mission */
+  .vision-mission {
+    padding: 40px 20px;
+  }
+  .vision-mission .text h2 {
+    font-size: 28px;
+  }
+  .vision-mission .text p {
+    font-size: 18px;
+  }
+  .vision-mission .image img {
+    height: 250px;
+  }
+
+  /* Product Info */
+  .productinfo-section {
+    padding: 40px 20px;
+  }
+  .productinfo-header h2 {
+    font-size: 35px;
+  }
+  .productinfo-card {
+    flex: 0 0 50%;
+  }
+
+  /* Featured Products */
+  .featured-products {
+    padding: 40px 20px;
+  }
+  .featured-header h2 {
+    font-size: 35px;
+  }
+  .product-item {
+    flex: 0.5 0.5 40%;
+  }
+
+  /* Testimonials */
+  .client-testimonials {
+    padding: 40px 20px;
+  }
+  .testimonial-header h2 {
+    font-size: 35px;
+  }
+  .testimonial-card {
+    max-width: none;
+  }
+
+  /* Guarantee Section */
+  .guarantee-section {
+    padding: 40px 20px;
+  }
+  .guarantee-badge {
+    width: 70px;
+    height: 70px;
+  }
+  .guarantee-badge i {
+    font-size: 35px;
+  }
+  .guarantee-header h2 {
+    font-size: 35px;
+  }
+  .guarantee-subtitle {
+    font-size: 18px;
+  }
+  .guarantee-intro {
+    padding: 25px 20px;
+  }
+  .guarantee-intro p {
+    font-size: 18px;
+  }
+  .guarantee-conditions h3 {
+    font-size: 28px;
+  }
+  .condition-card {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+  .condition-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .condition-icon i {
+    font-size: 28px;
+  }
+  .condition-card h4 {
+    font-size: 24px;
+  }
+  .condition-card p {
+    font-size: 17px;
+  }
+  .guarantee-process {
+    padding: 30px 20px;
+  }
+  .guarantee-process h3 {
+    font-size: 30px;
+  }
+  .step {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .step-number {
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+  }
+  .step-content h4 {
+    font-size: 22px;
+  }
+  .step-content p {
+    font-size: 17px;
+  }
+  .guarantee-cta {
+    padding: 30px 20px;
+  }
+  .cta-text {
+    font-size: 18px;
+  }
+  .guarantee-btn {
+    padding: 12px 30px;
+    font-size: 18px;
+  }
+
+  /* Footer */
+  .main-footer {
+    padding: 40px 20px 15px 20px;
+  }
+  .footer-grid {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  .footer-links,
+  .footer-contact {
+    flex: 1 1 100%;
+  }
+}
+
+/* === EXTRA SMALL MOBILE (max-width: 360px) === */
+@media screen and (max-width: 360px) {
+  /* E-commerce & Social Section - Extra Small */
+  .store-social-header h2 {
+    font-size: 30px;
+  }
+  .store-grid-container h3,
+  .social-grid-container h3 {
+    font-size: 26px;
+  }
+  .platform-card h4 {
+    font-size: 24px;
+  }
+  .social-card {
+    flex: 1 1 120px;
+  }
+  .pet-card {
+    max-width: 100px;
+  }
+  .pet-card h3 {
+    font-size: 8px;
+    margin: 0;
+  }
+  .logo img {
+    width: 130px;
+    height: 45px;
+  }
+  .hero-text h1 {
+    font-size: 30px;
+  }
+  .hero-text p {
+    font-size: 16px;
+  }
+  .hero-image img {
+    max-width: 240px;
+  }
+  .about-text h2 {
+    font-size: 28px;
+  }
+  .about-text p {
+    font-size: 16px;
+  }
+  .about-image img {
+    width: 200px;
+  }
+  .vision-mission .text h2 {
+    font-size: 24px;
+  }
+  .vision-mission .text p {
+    font-size: 16px;
+  }
+  .vision-mission .image img {
+    height: 250px;
+  }
+
+  /* Guarantee Section - Extra Small */
+  .guarantee-badge {
+    width: 60px;
+    height: 60px;
+  }
+  .guarantee-badge i {
+    font-size: 30px;
+  }
+  .guarantee-header h2 {
+    font-size: 30px;
+  }
+  .guarantee-subtitle {
+    font-size: 16px;
+  }
+  .guarantee-intro {
+    padding: 20px 15px;
+  }
+  .guarantee-intro p {
+    font-size: 16px;
+  }
+  .guarantee-conditions h3 {
+    font-size: 24px;
+  }
+  .condition-icon {
+    width: 55px;
+    height: 55px;
+  }
+  .condition-icon i {
+    font-size: 24px;
+  }
+  .condition-card h4 {
+    font-size: 22px;
+  }
+  .condition-card p {
+    font-size: 16px;
+  }
+  .guarantee-process {
+    padding: 25px 15px;
+  }
+  .guarantee-process h3 {
+    font-size: 26px;
+  }
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .step-content h4 {
+    font-size: 20px;
+  }
+  .step-content p {
+    font-size: 16px;
+  }
+  .cta-text {
+    font-size: 16px;
+  }
+  .guarantee-btn {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+}

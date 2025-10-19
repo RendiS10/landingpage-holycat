@@ -1,81 +1,823 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Holycat</title>
-    <link rel="icon" type="image/png" href="./public/image/icon.png" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="./public/css/responsive.css" />
+    <link rel="icon" type="image/png" href="./public/images/icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
       rel="stylesheet"
     />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./public/css/style.css" />
+
+    <title>Holycatlabs</title>
   </head>
   <body>
-    <div class="container">
-      <!-- Logo Utama -->
-      <img
-        src="./public/image/logo.png"
-        alt="PT Holycatlabs Indonesia"
-        class="logo-main"
-      />
+    <nav>
+      <div class="logo">
+        <img src="./public/images/logo.png" alt="Logo Holycat" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Our Products</a></li>
+        <li><a href="./src/contact.html">Store dan Social Media</a></li>
+      </ul>
 
-      <!-- Pesan -->
-      <h2>🚧 Under Maintenance 🚧</h2>
-      <p class="lead">Something new will come very soon...</p>
-
-      <!-- Social Media -->
-      <div class="social-links">
-        <p class="title">Ikuti kami di Social Media:</p>
-        <a href="https://www.instagram.com/holycat_official/" target="_blank">
-          <i class="fab fa-instagram"></i> Instagram
-        </a>
-        <a href="https://www.tiktok.com/@holycatofficial" target="_blank">
-          <i class="fab fa-tiktok"></i> TikTok
-        </a>
-        <a
-          href="https://www.facebook.com/profile.php?id=100090287932346"
-          target="_blank"
-        >
-          <i class="fab fa-facebook"></i> Facebook
-        </a>
-        <a
-          href="https://www.linkedin.com/company/holycat-labs-indonesia/"
-          target="_blank"
-        >
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
+      <div class="book-btn">
+        <a onclick="alert('Masih Dalam Pengembangan')" href="#">Shop Now</a>
       </div>
 
-      <!-- Marketplace -->
-      <div class="marketplace-links">
-        <p class="title">Temukan produk kami di Marketplace:</p>
-        <a href="https://shope.ee/1qBSMggVQn" target="_blank">
-          <i class="fa-solid fa-bag-shopping"></i> Shopee
-        </a>
-        <a href="https://www.lazada.co.id/shop/holycatlabs-id" target="_blank">
-          <i class="fa-solid fa-cart-shopping"></i> Lazada
-        </a>
-        <a href="https://www.tokopedia.com/holycatlabs" target="_blank">
-          <i class="fa-solid fa-store"></i> Tokopedia
-        </a>
-        <a href="https://www.tiktok.com/@holycatofficial" target="_blank">
-          <i class="fab fa-tiktok"></i> TikTok
-        </a>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-text animate-from-left">
+        <h1>Pilihan Tepat Jadikan Kucing Sehat</h1>
+        <p>
+          "Menjadi Mitra Terpercaya Dalam Menyediakan Solusi Kesehatan Kucing
+          Yang Lengkap, Aman, dan Terbukti Efektif"
+        </p>
+        <a href="#pet-section" class="btn">Layanan Kami</a>
+      </div>
+      <div class="hero-image animate-from-right">
+        <img src="./public/images/hero-gemini.png" alt="Happy Cat" />
+      </div>
+    </section>
+    <section class="pet-section" id="pet-section">
+      <div class="pet-card one animate-from-bottom">
+        <img src="./public/images/love.png" alt="Kucing Love" />
+        <h3>Gratis Konsultasi 24 Jam</h3>
       </div>
 
-      <!-- Kontak -->
-      <div class="contact-box">
-        <p>Hubungi Customer Service:</p>
-        <a href="https://wa.me/6285171002858" target="_blank">
-          <i class="fab fa-whatsapp"></i> Chat via WhatsApp
-        </a>
+      <div class="pet-card animate-from-bottom">
+        <img src="./public/images/kaget.png" alt="Kucing Kaget" />
+        <h3>Gratis 100% Refund</h3>
       </div>
-    </div>
+
+      <div class="pet-card animate-from-bottom">
+        <img src="./public/images/aboutus2.png" alt="Kucing Keren" />
+        <h3>Produk Berizin Kementan</h3>
+      </div>
+
+      <div class="pet-card four animate-from-bottom">
+        <img src="./public/images/visi-misi.png" alt="Kucing Stories" />
+        <h3>Rekomendasi&nbsp;Dokter&nbsp;Hewan</h3>
+      </div>
+    </section>
+    <section class="productinfo-section" id="products">
+      <div class="container">
+        <div class="productinfo-header">
+          <h2 class="animate-from-bottom">
+            Solusi Terbaik untuk Kesehatan Anabul Anda
+          </h2>
+          <p class="animate-from-bottom">
+            Jelajahi pilihan produk inovatif kami yang dirancang khusus untuk
+            memenuhi kebutuhan unik kucing Anda.
+          </p>
+        </div>
+
+        <div class="productinfo-grid">
+          <div
+            class="productinfo-card animate-from-bottom"
+            style="--animation-delay: 0.1s"
+          >
+            <div class="icon-circle primary-green-bg">
+              <img src="./public/images/vitamin-icon.jpg" alt="Vitamin Icon" />
+            </div>
+            <h3>Suplemen & Vitamin</h3>
+          </div>
+
+          <div
+            class="productinfo-card animate-from-bottom"
+            style="--animation-delay: 0.3s"
+          >
+            <div class="icon-circle primary-yellow-bg">
+              <img
+                src="./public/images/obat-pencernaan.jpg"
+                alt="Obat Pencernaan icon"
+              />
+            </div>
+            <h3>Obat</h3>
+          </div>
+
+          <div
+            class="productinfo-card animate-from-bottom"
+            style="--animation-delay: 0.5s"
+          >
+            <div class="icon-circle primary-green-bg">
+              <img
+                src="./public/images/perawatan.jpg"
+                alt="Perawatan Kulit & Bulu Icon"
+              />
+            </div>
+            <h3>Grooming</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-us" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text animate-from-left">
+            <h2>Tentang <b>Holycatlabs</b></h2>
+            <p>
+              <span id="teksSingkat">
+                Di Holycat Labs, kami sepenuh hati mendedikasikan diri untuk
+                menyediakan rangkaian produk kesehatan yang komprehensif bagi
+                hewan peliharaan kesayangan Anda.
+              </span>
+              <span id="teksLanjutan" style="display: none">
+                Misi kami adalah menghadirkan produk berkualitas tinggi yang
+                dapat Anda percaya sepenuhnya, dengan harga yang selalu
+                terjangkau. Setiap produk kami diracik dengan cermat oleh para
+                profesional ahli di industri ini, menjamin keamanan dan
+                efektivitas untuk anabul Anda. Kami bangga menyajikan solusi
+                premium yang memenuhi beragam kebutuhan kesehatan sahabat
+                berbulu Anda, menjadikan kami pilihan utama bagi para pecinta
+                hewan. Pilih Holycat Labs untuk obat hewan peliharaan yang
+                terpercaya, hemat biaya, dan selalu bisa diandalkan oleh Anda
+                serta kucing kesayangan Anda!
+              </span>
+            </p>
+            <button
+              id="tombolBacaSelengkapnya"
+              onclick="toggleTeks()"
+              class="read-more-btn"
+            >
+              Baca Selengkapnya
+            </button>
+          </div>
+          <div class="about-image animate-from-right">
+            <img src="./public/images/aboutus2.png" alt="About Happy Pet" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="kementan-section" id="kementan">
+      <div class="container">
+        <div class="kementan-content">
+          <div class="kementan-image animate-from-left">
+            <div class="certificate-badge">
+              <i class="fas fa-certificate"></i>
+              <span class="badge-text">RESMI</span>
+            </div>
+            <img
+              src="./public/images/aboutus2.png"
+              alt="Produk Berizin Kementan"
+            />
+          </div>
+
+          <div class="kementan-text animate-from-right">
+            <div class="section-label">
+              <i class="fas fa-stamp"></i> Legalitas Terjamin
+            </div>
+            <h2>Holycat Resmi Berizin Kementan</h2>
+            <p class="intro-text">
+              Langkah kecil untuk kami, tapi
+              <strong>besar untuk kepercayaanmu</strong>. Kini, seluruh produk
+              Holycat telah resmi terdaftar dan berizin Kementan.
+            </p>
+
+            <div class="kementan-features">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-flask"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Uji Kualitas Ketat</h4>
+                  <p>
+                    Setiap formula melalui proses uji kualitas, keamanan, dan
+                    efektivitas sesuai standar nasional untuk produk kesehatan
+                    hewan
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Komitmen Keamanan</h4>
+                  <p>
+                    Izin resmi bukan sekadar formalitas, ini bentuk komitmen
+                    kami menghadirkan produk yang benar-benar aman, terpercaya,
+                    dan efektif
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-award"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Jaminan Mutu Nasional</h4>
+                  <p>
+                    Tidak perlu ragu akan kualitas bahan, cara kerja, dan
+                    keamanan produk. Setiap tetes, kapsul, semprotan memiliki
+                    jaminan mutu yang diakui negara
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="kementan-cta">
+              <a href="./src/contact.html" class="primary-btn">
+                <i class="fas fa-box-open"></i> Lihat Produk Resmi Kami
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <div class="container">
+        <div class="featured-header animate-from-bottom">
+          <h2>Produk Unggulan Kami</h2>
+          <p>
+            Pilihan terbaik yang paling diminati untuk kesehatan optimal anabul
+            Anda.
+          </p>
+        </div>
+
+        <div class="featured-grid">
+          <div
+            class="product-item animate-from-bottom"
+            style="--animation-delay: 0.2s"
+          >
+            <div class="product-image-container">
+              <img
+                src="https://images.tokopedia.net/img/cache/700/aphluv/1997/1/1/a15493ae3e0340aea5a5abd41be6dfb3~.jpeg"
+                alt="O-CING 20 ML"
+              />
+              <span class="badge primary-green-bg">BEST SELLER</span>
+            </div>
+            <h3>O-CING</h3>
+            <p class="description">
+              Holycatlabs Obat Cacing Kucing Ampuh membasmi Cacing O-Cing tetes
+              20 ML - O-CING 20 ML
+            </p>
+            <a
+              href="https://www.tokopedia.com/holycatlabs/holycatlabs-obat-cacing-kucing-ampuh-membasmi-cacing-o-cing-tetes-20-ml-1729598064966273799?extParam=src%3Dshop%26whid%3D12952509&aff_unique_id=&channel=others&chain_key="
+              class="shop-btn"
+              >Lihat Produk</a
+            >
+          </div>
+
+          <div
+            class="product-item animate-from-bottom"
+            style="--animation-delay: 0.4s"
+          >
+            <div class="product-image-container">
+              <img
+                src="https://images.tokopedia.net/img/cache/700/aphluv/1997/1/1/2814997c07074db99736ba286dcb0fc1~.jpeg"
+                alt="HolyClear Digestive Ai"
+              />
+              <span class="badge primary-yellow-bg">PROMO KHUSUS</span>
+            </div>
+            <h3>HUS HUS</h3>
+            <p class="description">
+              Holycatlabs Pencegah Tikus & Melatih Kucing HUS HU5 250 ML Cat &
+              Rat Repelent Anti Poop Sembarangan Indoor Outdoor - 250 ML
+            </p>
+            <a
+              href="https://www.tokopedia.com/holycatlabs/holycatlabs-pencegah-tikus-melatih-kucing-hus-hu5-250-ml-cat-rat-repelent-anti-poop-sembarangan-indoor-outdoor-1729569951398988551?extParam=src%3Dshop%26whid%3D12952509&aff_unique_id=&channel=others&chain_key="
+              class="shop-btn"
+              >Lihat Produk</a
+            >
+          </div>
+
+          <div
+            class="product-item animate-from-bottom"
+            style="--animation-delay: 0.6s"
+          >
+            <div class="product-image-container">
+              <img
+                src="https://images.tokopedia.net/img/cache/700/aphluv/1997/1/1/e1fedf6ea56f4e0eb0b23fd80ccad1c8~.jpeg"
+                alt="O-BI"
+              />
+              <span class="badge primary-green-bg">BARU</span>
+            </div>
+            <h3>O-BI</h3>
+            <p class="description">
+              Holycatlabs O-BI Herbal Penurun LIBIDO & Menghilangkan Stress
+              Kucing isi 20 ml - OBI JANTAN
+            </p>
+            <a
+              href="https://www.tokopedia.com/holycatlabs/holycatlabs-o-bi-herbal-penurun-libido-menghilangkan-stress-kucing-isi-20-ml-1729636689611687687?extParam=src%3Dshop%26whid%3D12952509&aff_unique_id=&channel=others&chain_key="
+              class="shop-btn"
+              >Lihat Produk</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="consultation-section" id="consultation">
+      <div class="container">
+        <div class="consultation-header animate-from-bottom">
+          <div class="consultation-badge">
+            <i class="fas fa-user-md"></i>
+          </div>
+          <h2>Gratis Konsultasi Kesehatan Kucing 24 Jam</h2>
+          <p class="consultation-subtitle">
+            Komitmen Holycat adalah menjadi solusi yang tepat untuk menjadikan
+            kucing sehat — dan itu kami buktikan dengan kemudahan mengakses
+            konsultasi bersama dokter hewan
+          </p>
+        </div>
+
+        <div class="consultation-content">
+          <div class="consultation-intro animate-from-left">
+            <p>
+              Kami percaya, setiap kucing berhak mendapatkan perhatian yang
+              tepat, dimulai dari pemahaman yang benar atas kondisi mereka.
+              Banyak pemilik kucing yang merasa bingung ketika melihat
+              tanda-tanda seperti bulu rontok, nafsu makan menurun, atau
+              perilaku yang tiba-tiba berubah.
+            </p>
+            <p class="highlight-text">
+              <i class="fas fa-heart"></i> Di sinilah Holycat hadir — bukan
+              hanya lewat produk, tapi juga lewat
+              <strong
+                >pendampingan nyata yang bisa kamu akses kapan saja, tanpa
+                biaya</strong
+              >.
+            </p>
+          </div>
+
+          <div class="consultation-grid">
+            <div
+              class="consultation-card animate-from-bottom"
+              style="--animation-delay: 0.1s"
+            >
+              <div class="card-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3>24/7 Siap Bantu</h3>
+              <p>
+                Tim kami dan dokter hewan berpengalaman siap memberikan saran
+                kapan saja kamu membutuhkannya
+              </p>
+            </div>
+
+            <div
+              class="consultation-card animate-from-bottom"
+              style="--animation-delay: 0.3s"
+            >
+              <div class="card-icon">
+                <i class="fas fa-qrcode"></i>
+              </div>
+              <h3>Akses Mudah</h3>
+              <p>
+                Scan barcode di kemasan produk Holycat atau di halaman ini untuk
+                langsung terhubung dengan tim kami
+              </p>
+            </div>
+
+            <div
+              class="consultation-card animate-from-bottom"
+              style="--animation-delay: 0.5s"
+            >
+              <div class="card-icon">
+                <i class="fas fa-gift"></i>
+              </div>
+              <h3>100% Gratis</h3>
+              <p>
+                Tidak ada biaya tersembunyi. Konsultasi sepenuhnya gratis untuk
+                semua pengguna produk Holycat
+              </p>
+            </div>
+          </div>
+
+          <div class="qr-section animate-from-right">
+            <div class="qr-container">
+              <div class="qr-placeholder">
+                <i class="fas fa-qrcode"></i>
+                <p>Scan QR Code untuk Konsultasi</p>
+              </div>
+            </div>
+            <div class="qr-text">
+              <h3>Cara Konsultasi:</h3>
+              <ol>
+                <li>Scan QR Code di samping atau di kemasan produk</li>
+                <li>Terhubung langsung dengan tim Holycat via WhatsApp</li>
+                <li>Ceritakan kondisi kucing kamu</li>
+                <li>Dapatkan saran dan solusi dari ahlinya</li>
+              </ol>
+              <a href="https://wa.me/6285171002858" class="consult-btn">
+                <i class="fab fa-whatsapp"></i> Konsultasi Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="client-testimonials" id="testimonials">
+      <div class="container">
+        <div class="testimonial-header animate-from-bottom">
+          <h2>Kata Mereka Tentang Holycat Labs</h2>
+          <p>
+            Ratusan pemilik kucing telah mempercayakan kesehatan anabulnya
+            kepada kami. Dengarkan kisah sukses mereka!
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div
+            class="testimonial-card animate-from-bottom"
+            style="--animation-delay: 0.1s"
+          >
+            <span class="quote">"</span>
+            <blockquote>
+              <p>
+                Produk Holycat benar-benar mengubah kondisi kucing saya yang
+                dulunya sering sakit. Sekarang ia aktif dan nafsu makannya
+                meningkat drastis. Sangat merekomendasikan!
+              </p>
+            </blockquote>
+            <div class="author">
+              <img
+                src="./public/images/avatar-1.jpg"
+                alt="Avatar Pelanggan 1"
+              />
+              <div>
+                <h4>Rina Aulia</h4>
+                <p>Pemilik Kucing (Jakarta)</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="testimonial-card animate-from-bottom"
+            style="--animation-delay: 0.3s"
+          >
+            <span class="quote">"</span>
+            <blockquote>
+              <p>
+                Holycat adalah penyelamat! Kucing saya sering diare, tapi
+                setelah rutin menggunakan obat ini, pencernaannya jadi stabil.
+                Pelayanan konsultasi dokter hewan juga sangat membantu.
+              </p>
+            </blockquote>
+            <div class="author">
+              <img
+                src="./public/images/avatar-2.jpg"
+                alt="Avatar Pelanggan 2"
+              />
+              <div>
+                <h4>Bambang Wijaya</h4>
+                <p>Pecinta Anabul (Surabaya)</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="testimonial-card animate-from-bottom"
+            style="--animation-delay: 0.5s"
+          >
+            <span class="quote">"</span>
+            <blockquote>
+              <p>
+                Sangat senang dengan produk perawatan bulunya! Bulu kucing saya
+                jadi lebih halus dan kerontokannya berkurang banyak. Holycat
+                Labs memang pilihan terbaik untuk kebutuhan kucing.
+              </p>
+            </blockquote>
+            <div class="author">
+              <img
+                src="./public/images/avatar-3.jpg"
+                alt="Avatar Pelanggan 3"
+              />
+              <div>
+                <h4>Clara Devi</h4>
+                <p>Cat Mom (Bandung)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="guarantee-section" id="guarantee">
+      <div class="container">
+        <div class="guarantee-header animate-from-bottom">
+          <div class="guarantee-badge">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h2>Garansi Refund 100%</h2>
+          <p class="guarantee-subtitle">
+            Kepercayaan harus dibuktikan, bukan sekadar janji
+          </p>
+        </div>
+
+        <div class="guarantee-content">
+          <div class="guarantee-intro animate-from-left">
+            <p>
+              Holycat berkomitmen menjadi solusi kesehatan kucing yang dapat
+              dipercaya. Kami memahami bahwa setiap kucing memiliki kondisi
+              unik, dan tidak semua responnya sama. Namun satu hal yang pasti,
+              <strong>kami ingin kamu merasa aman dalam setiap pembelian</strong
+              >.
+            </p>
+          </div>
+
+          <div class="guarantee-conditions" id="garansiKondisi">
+            <h3 class="animate-from-bottom">
+              Kami Memberikan Garansi Uang Kembali untuk:
+            </h3>
+            <div class="conditions-grid">
+              <div
+                class="condition-card animate-from-bottom"
+                style="--animation-delay: 0.1s"
+              >
+                <div class="condition-icon">
+                  <i class="fas fa-box-open"></i>
+                </div>
+                <h4>Produk Rusak</h4>
+                <p>Produk yang diterima rusak saat pengiriman</p>
+              </div>
+
+              <div
+                class="condition-card animate-from-bottom"
+                style="--animation-delay: 0.3s"
+              >
+                <div class="condition-icon">
+                  <i class="fas fa-exchange-alt"></i>
+                </div>
+                <h4>Produk Tidak Sesuai</h4>
+                <p>Produk yang dikirim tidak sesuai pesanan</p>
+              </div>
+
+              <div
+                class="condition-card animate-from-bottom"
+                style="--animation-delay: 0.5s"
+              >
+                <div class="condition-icon">
+                  <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h4>Produk Tidak Lengkap</h4>
+                <p>Produk diterima dalam kondisi tidak lengkap</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="guarantee-process animate-from-right">
+            <h3>Proses Mudah & Cepat</h3>
+            <div class="process-steps">
+              <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h4>Dokumentasi</h4>
+                  <p>
+                    Siapkan bukti pembelian dan foto kondisi produk yang
+                    bermasalah
+                  </p>
+                </div>
+              </div>
+
+              <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h4>Kirim Laporan</h4>
+                  <p>
+                    Kirimkan melalui chat resmi Holycat atau formulir
+                    pengembalian di website
+                  </p>
+                </div>
+              </div>
+
+              <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h4>Verifikasi</h4>
+                  <p>
+                    Tim kami akan melakukan verifikasi secara cepat dan
+                    transparan
+                  </p>
+                </div>
+              </div>
+
+              <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                  <h4>Selesai</h4>
+                  <p>Dapatkan penggantian atau pengembalian dana</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="guarantee-cta animate-from-bottom">
+            <p class="cta-text">
+              <i class="fas fa-heart"></i> Dengan kebijakan ini, kami ingin
+              memastikan setiap pembelian di Holycat selalu berujung pada satu
+              hal:
+              <strong>Kepuasanmu, dan kesehatan kucing kesayanganmu</strong>
+            </p>
+            <a href="https://wa.me/6285171002858" class="guarantee-btn">
+              <i class="fab fa-whatsapp"></i> Hubungi Kami Sekarang
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="vision-mission">
+      <div class="container">
+        <div class="content">
+          <div class="image animate-from-left">
+            <img
+              src="./public/images/visi-misi.png"
+              alt="Holycat Labs Illustration"
+            />
+          </div>
+          <div class="text animate-from-right">
+            <h2>Visi Kami</h2>
+            <p>
+              Menjadi advokat terdepan untuk kesehatan dan kebahagiaan kucing,
+              merintis solusi inovatif, dan membina ikatan yang lebih dalam
+              antara kucing dan pemiliknya.
+            </p>
+
+            <h2>Misi Kami</h2>
+            <p id="misiParagraf">
+              <span id="misiSingkat">
+                Di Holycat Labs, misi kami adalah menyediakan produk obat
+                berkualitas premium dan inovatif yang disesuaikan dengan
+                kebutuhan unik teman berbulu kesayangan Anda.
+              </span>
+              <span id="misiLanjutan" style="display: none">
+                Kami berupaya meningkatkan kesejahteraan kucing dengan
+                menawarkan solusi yang aman, efektif, dan terpercaya yang
+                mengutamakan kesehatan dan kebahagiaan mereka. Melalui
+                penelitian, pengembangan, dan edukasi berkelanjutan, kami
+                bertujuan memberdayakan pemilik hewan untuk membuat keputusan
+                yang tepat dan memberikan perawatan terbaik bagi kucing mereka,
+                memastikan mereka menjalani hidup yang penuh vitalitas dan
+                kebahagiaan.
+              </span>
+            </p>
+            <button
+              id="tombolMisi"
+              onclick="toggleMisi()"
+              class="read-more-btn"
+            >
+              Baca Selengkapnya
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <img
+              src="./public/images/logo.png"
+              alt="Holycatlabs Logo Footer"
+              class="footer-logo"
+            />
+            <p>
+              Dedikasi kami untuk menyediakan beragam solusi kesehatan
+              terlengkap bagi kucing kesayangan Anda.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/holycat_official/ "
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100090287932346"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.tiktok.com/@holycatofficial"
+                aria-label="Tiktok"
+                ><i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Navigasi Cepat</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#products">Our Products</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Bantuan</h4>
+            <ul>
+              <li><a href="./src/contact.html">FAQ</a></li>
+              <li><a href="#">Kebijakan Privasi</a></li>
+              <li><a href="#">Syarat & Ketentuan</a></li>
+              <li><a href="#garansiKondisi">Pengembalian Produk</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Hubungi Kami</h4>
+            <p>
+              <i class="icon-phone"></i> +6285171002858<br />
+              <i class="icon-email"></i> hello@holycatlabs.com
+            </p>
+            <p>
+              <i class="icon-location"></i> Jl. AH. Nasution No.KM.10,
+              Pakemitan, Kec. Cinambo, Kota Bandung, Jawa Barat 40294
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Holycat Labs. Hak Cipta Dilindungi.</p>
+        </div>
+      </div>
+    </footer>
+    <a
+      href="https://wa.me/6285171002858"
+      target="_blank"
+      class="whatsapp-float"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <span>Konsultasi Gratis Sekarang!</span>
+    </a>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+      }
+
+      // Mengganti innerHTML tombol Baca Selengkapnya menjadi hanya teks
+      function toggleTeks() {
+        var teksLanjutan = document.getElementById("teksLanjutan");
+        var tombol = document.getElementById("tombolBacaSelengkapnya");
+
+        if (teksLanjutan.style.display === "none") {
+          teksLanjutan.style.display = "inline";
+          tombol.innerHTML = "Sembunyikan";
+        } else {
+          teksLanjutan.style.display = "none";
+          tombol.innerHTML = "Baca Selengkapnya";
+        }
+      }
+
+      function toggleMisi() {
+        var teksLanjutan = document.getElementById("misiLanjutan");
+        var tombol = document.getElementById("tombolMisi");
+
+        if (teksLanjutan.style.display === "none") {
+          teksLanjutan.style.display = "inline";
+          tombol.innerHTML = "Sembunyikan";
+        } else {
+          teksLanjutan.style.display = "none";
+          tombol.innerHTML = "Baca Selengkapnya";
+        }
+      }
+
+      // FUNGSI ANIMASI ON-SCROLL
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+        }
+      );
+
+      const animatedElements = document.querySelectorAll(
+        ".animate-from-left, .animate-from-right, .animate-from-bottom"
+      );
+
+      animatedElements.forEach((element) => {
+        observer.observe(element);
+      });
+    </script>
   </body>
 </html>
