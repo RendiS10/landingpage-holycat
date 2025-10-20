@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center px-6 md:px-16 py-4 bg-white sticky top-0 z-50 shadow-md h-24">
+    <nav className="flex justify-between items-center px-6 md:px-16 py-4 bg-white sticky top-0 z-50 shadow-md h-24 mx-[50px] rounded-b-[25px]">
       <div className="logo">
         <Link to="/">
           <img
@@ -22,7 +22,7 @@ const Navbar = () => {
       </div>
 
       <ul
-        className={`nav-links absolute md:relative top-24 md:top-0 left-0 right-0 md:flex flex-col md:flex-row items-center md:items-start p-5 md:p-0 bg-white md:bg-transparent shadow-md md:shadow-none gap-4 md:gap-6 list-none transition-all duration-300 ${
+        className={`nav-links absolute md:relative top-24 md:top-0 left-0 right-0 md:flex font-bold flex-col md:flex-row items-center md:items-start p-5 md:p-0 bg-white md:bg-transparent shadow-md md:shadow-none gap-4 md:gap-6 list-none transition-all duration-300 ${
           isOpen ? "flex" : "hidden"
         }`}
       >
@@ -58,17 +58,18 @@ const Navbar = () => {
             Store dan Social Media
           </a>
         </li>
+        <li>
+          <div className="book-btn pt-1 hidden md:block">
+            <a
+              onClick={() => alert("Masih Dalam Pengembangan")}
+              href="#"
+              className="text-xl no-underline text-white font-bold bg-primary-yellow py-2 px-8 rounded-xl transition-all hover:bg-primary-green hover:-translate-y-0.5"
+            >
+              SHOP NOW!
+            </a>
+          </div>
+        </li>
       </ul>
-
-      <div className="book-btn pt-1 hidden md:block">
-        <a
-          onClick={() => alert("Masih Dalam Pengembangan")}
-          href="#"
-          className="text-xl no-underline text-white font-bold bg-primary-yellow py-2 px-8 rounded-xl transition-all hover:bg-primary-green hover:-translate-y-0.5"
-        >
-          Shop Now
-        </a>
-      </div>
 
       <div
         className="hamburger flex flex-col cursor-pointer md:hidden"

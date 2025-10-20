@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 // Impor Gambar (Memastikan Jalur Relatif ke folder public/images)
 // Path: dari src/pages/ ke public/images/ adalah ../../public/images/
-import heroImage from "../../public/images/hero-gemini.png";
+import heroImage from "../../public/images/kucing-preview.png";
 import loveIcon from "../../public/images/love.png";
 import kagetIcon from "../../public/images/kaget.png";
 import aboutUs2Icon from "../../public/images/aboutus2.png";
@@ -73,13 +73,15 @@ const HomePage = () => {
 
   return (
     <>
-      <Navbar />
+      <div className="bg-[#44AF7C]">
+        <Navbar />
+      </div>
       <main>
         {/* === HERO SECTION === */}
-        <section className="hero flex flex-col md:flex-row justify-center items-center px-6 md:px-16 py-10 bg-primary-green min-h-[84vh] gap-8 md:gap-20 lg:gap-20">
+        <section className="hero flex flex-col md:flex-row justify-center items-center px-6 md:px-16 py-0 bg-primary-green min-h-[84vh] gap-8 md:gap-20 lg:gap-20">
           <div
             ref={addAnimatedRef}
-            className="hero-text max-w-lg text-center animate-from-left"
+            className="hero-text max-w-lg text-left animate-from-left"
           >
             <h1 className="text-white text-5xl md:text-6xl lg:text-7xl mb-4">
               Pilihan Tepat Jadikan Kucing Sehat
@@ -90,17 +92,13 @@ const HomePage = () => {
             </p>
             <a
               href="/#pet-section"
-              className="btn bg-primary-yellow text-text-dark py-2 px-12 rounded-full text-xl font-bold inline-block transition-all hover:bg-white hover:-translate-y-0.5 shadow-lg"
+              className="btn bg-primary-yellow text-white py-2 px-12 rounded-xl text-xl font-bold inline-block transition-all hover:bg-white hover:text-primary-yellow hover:-translate-y-0.5 shadow-lg"
             >
-              Layanan Kami
+              Shop Now
             </a>
           </div>
           <div ref={addAnimatedRef} className="hero-image animate-from-right">
-            <img
-              src={heroImage}
-              alt="Happy Cat"
-              className="max-w-[400px] w-full rounded-xl md:max-w-[350px] xs:max-w-[280px]"
-            />
+            <img src={heroImage} alt="Happy Cat" className="h-[500px]" />
           </div>
         </section>
 
