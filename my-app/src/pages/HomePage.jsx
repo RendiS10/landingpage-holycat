@@ -11,9 +11,9 @@ import kagetIcon from "../../public/images/kaget.png";
 import aboutUs2Icon from "../../public/images/aboutus2.png";
 import visiMisiIcon from "../../public/images/visi-misi.png";
 import aboutUsImage from "../../public/images/aboutus2.png"; // Digunakan juga di kementan
-import vitaminIcon from "../../public/images/vitamin-icon.jpg";
+import vitaminIcon from "../../public/images/vitamin.png";
 import obatPencernaanIcon from "../../public/images/obat.png";
-import perawatanIcon from "../../public/images/perawatan.jpg";
+import perawatanIcon from "../../public/images/sampo.png";
 import visiMisiImage from "../../public/images/visi-misi.png";
 
 // HAPUS: import avatar1 from "../../public/images/avatar-1.jpg";
@@ -73,9 +73,7 @@ const HomePage = () => {
 
   return (
     <>
-      <div className="bg-[#44AF7C]">
-        <Navbar />
-      </div>
+      <Navbar />
       <main>
         {/* === HERO SECTION === */}
         <section
@@ -134,10 +132,12 @@ const HomePage = () => {
               className="productinfo-header animate-from-bottom"
             >
               <h2 className="text-4xl md:text-5xl text-text-dark mb-4">
-                Solusi Terpercaya untuk Kesehatan dan Perawatan Anabul Anda
+                Solusi Terpercaya untuk Kesehatan dan
+                <br /> Perawatan Anabul Anda
               </h2>
               <p className="text-xl md:text-2xl text-text-dark max-w-4xl mx-auto opacity-80">
                 Temukan produk inovatif Holycat yang dirancang khusus untuk
+                <br />
                 memenuhi kebutuhan anabul anda.
               </p>
             </div>
@@ -145,10 +145,10 @@ const HomePage = () => {
             <div className="productinfo-grid flex flex-wrap justify-center gap-8 md:gap-10 mt-12">
               <div
                 ref={addAnimatedRef}
-                className="productinfo-card flex-1 min-w-[300px] max-w-md bg-white p-8 rounded-xl shadow-lg transition-all border-2 border-transparent hover:-translate-y-2 hover:shadow-xl hover:border-primary-green animate-from-bottom"
+                className="productinfo-card flex-1 min-w-[300px] max-w-md bg-white p-8 rounded-xl  transition-all  hover:-translate-y-2  hover:border-primary-green animate-from-bottom is-visible"
                 style={{ "--animation-delay": "0.3s" }}
               >
-                <div className="icon-circle primary-yellow-bg w-20 h-20 rounded-full mx-auto mb-5 flex items-center justify-center">
+                <div className="icon-circle primary-yellow-bg w-296 h-296 rounded-full mx-auto mb-5 flex items-center justify-center">
                   <img
                     src={obatPencernaanIcon}
                     alt="Obat Pencernaan icon"
@@ -164,10 +164,10 @@ const HomePage = () => {
               </div>{" "}
               <div
                 ref={addAnimatedRef}
-                className="productinfo-card flex-1 min-w-[300px] max-w-md bg-white p-8 rounded-xl shadow-lg transition-all border-2 border-transparent hover:-translate-y-2 hover:shadow-xl hover:border-primary-green animate-from-bottom"
+                className="productinfo-card flex-1 min-w-[300px] max-w-md bg-white p-8 rounded-xl  transition-all  hover:-translate-y-2  hover:border-primary-green animate-from-bottom is-visible"
                 style={{ "--animation-delay": "0.1s" }}
               >
-                <div className="icon-circle primary-green-bg w-20 h-20 rounded-full mx-auto mb-5 flex items-center justify-center">
+                <div className="icon-circle primary-green-bg w-296 h-296 rounded-full mx-auto mb-5 flex items-center justify-center">
                   <img
                     src={vitaminIcon}
                     alt="Vitamin Icon"
@@ -177,13 +177,17 @@ const HomePage = () => {
                 <h3 className="text-3xl text-text-dark my-4">
                   Suplemen & Vitamin
                 </h3>
+                <p>
+                  Nutrisi ilmiah hasil uji laboratorium untuk menjaga daya
+                  tahan, bulu, dan kebutuhan harian anabul.
+                </p>
               </div>
               <div
                 ref={addAnimatedRef}
-                className="productinfo-card flex-1 min-w-[300px] max-w-md bg-white p-8 rounded-xl shadow-lg transition-all border-2 border-transparent hover:-translate-y-2 hover:shadow-xl hover:border-primary-green animate-from-bottom"
+                className="productinfo-card flex-1 min-w-[300px] max-w-md bg-white p-8 rounded-xl  transition-all  hover:-translate-y-2  hover:border-primary-green animate-from-bottom is-visible"
                 style={{ "--animation-delay": "0.5s" }}
               >
-                <div className="icon-circle primary-green-bg w-20 h-20 rounded-full mx-auto mb-5 flex items-center justify-center">
+                <div className="icon-circle primary-green-bg w-296 h-296 rounded-full mx-auto mb-5 flex items-center justify-center">
                   <img
                     src={perawatanIcon}
                     alt="Perawatan Kulit & Bulu Icon"
@@ -191,6 +195,10 @@ const HomePage = () => {
                   />
                 </div>
                 <h3 className="text-3xl text-text-dark my-4">Grooming</h3>
+                <p>
+                  Perawatan luar dengan formula lembut berstandar dokter hewan,
+                  menjaga kebersihan dan kilau bulu setiap hari.
+                </p>
               </div>
             </div>
           </div>
