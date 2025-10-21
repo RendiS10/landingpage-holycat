@@ -5,14 +5,14 @@ import Footer from "../components/Footer";
 
 // Impor Gambar (Memastikan Jalur Relatif ke folder public/images)
 // Path: dari src/pages/ ke public/images/ adalah ../../public/images/
-import heroImage from "../../public/images/kucing-preview.png";
+import heroImage from "../../public/images/adam.png";
 import loveIcon from "../../public/images/love.png";
 import kagetIcon from "../../public/images/kaget.png";
 import aboutUs2Icon from "../../public/images/aboutus2.png";
 import visiMisiIcon from "../../public/images/visi-misi.png";
 import aboutUsImage from "../../public/images/aboutus2.png"; // Digunakan juga di kementan
 import vitaminIcon from "../../public/images/vitamin-icon.jpg";
-import obatPencernaanIcon from "../../public/images/obat-pencernaan.jpg";
+import obatPencernaanIcon from "../../public/images/obat.png";
 import perawatanIcon from "../../public/images/perawatan.jpg";
 import visiMisiImage from "../../public/images/visi-misi.png";
 
@@ -78,93 +78,48 @@ const HomePage = () => {
       </div>
       <main>
         {/* === HERO SECTION === */}
-        <section className="hero flex flex-col md:flex-row justify-center items-center px-6 md:px-16 py-0 bg-primary-green min-h-[84vh] gap-8 md:gap-20 lg:gap-20">
+        <section
+          // Ditambahkan items-center untuk mensejajarkan teks dan gambar secara vertikal di desktop
+          className="hero flex flex-col md:flex-row justify-center items-center px-6 md:px-16 py-0 bg-primary-green min-h-[84vh] gap-8 md:gap-12 lg:gap-20"
+        >
+          {/* --- Konten Teks --- */}
           <div
             ref={addAnimatedRef}
-            className="hero-text max-w-lg text-left animate-from-left"
+            // Ditambahkan: perataan teks & item diubah untuk mobile vs desktop
+            className="hero-text max-w-lg animate-from-left flex flex-col gap-8 text-center md:text-left items-center md:items-start"
           >
-            <h1 className="text-white text-5xl md:text-6xl lg:text-7xl mb-4">
+            <h1
+              // DIUBAH: Ukuran font dibuat responsif (mobile-first)
+              className="text-white font-lilita font-normal text-5xl md:text-6xl lg:text-[76px] leading-tight tracking-normal"
+            >
               Pilihan Tepat Jadikan Kucing Sehat
             </h1>
-            <p className="text-xl md:text-2xl text-white mb-6">
-              "Menjadi Mitra Terpercaya Dalam Menyediakan Solusi Kesehatan
-              Kucing Yang Lengkap, Aman, dan Terbukti Efektif"
+            <p
+              // DIUBAH: Ukuran font dibuat responsif
+              className="font-dongle font-normal text-2xl md:text-[32px] text-white leading-tight"
+            >
+              Mitra Terpercaya dalam Menyediakan Solusi Kesehatan Kucing yang
+              Lengkap, Aman, dan Teruji Efektif
             </p>
             <a
               href="/#pet-section"
+              // Kelas self-start dihapus agar perataan dikontrol oleh parent div
               className="btn bg-primary-yellow text-white py-2 px-12 rounded-xl text-xl font-bold inline-block transition-all hover:bg-white hover:text-primary-yellow hover:-translate-y-0.5 shadow-lg"
             >
-              Shop Now
+              SHOP NOW!
             </a>
           </div>
-          <div ref={addAnimatedRef} className="hero-image animate-from-right">
-            <img src={heroImage} alt="Happy Cat" className="h-[500px]" />
-          </div>
-        </section>
 
-        {/* === PET CARDS SECTION === */}
-        <section
-          id="pet-section"
-          className="mt-5 mx-5 scroll-mt-[75px] flex flex-wrap justify-center p-5 md:p-0 gap-4 md:gap-0"
-        >
-          {/* Mapping Card 1 */}
+          {/* --- Konten Gambar --- */}
           <div
             ref={addAnimatedRef}
-            className="pet-card flex-1 min-w-[200px] md:max-w-[25%] bg-primary-green text-white p-5 text-center transition-all hover:-translate-y-1 hover:bg-primary-yellow hover:text-text-dark rounded-xl md:rounded-r-none md:rounded-l-[25px] animate-from-bottom"
+            className="hero-image animate-from-right w-full max-w-sm md:max-w-none md:w-1/2 h-auto"
           >
             <img
-              src={loveIcon}
-              alt="Kucing Love"
-              className="w-16 h-16 object-cover mb-2 mx-auto"
+              src={heroImage}
+              alt="Happy Cat"
+              className="w-full h-full object-cover"
             />
-            <h3 className="text-lg md:text-2lg m-0 text-white hover:text-text-dark">
-              Gratis Konsultasi 24 Jam
-            </h3>
-          </div>
-          {/* Mapping Card 2 */}
-          <div
-            ref={addAnimatedRef}
-            className="pet-card flex-1 min-w-[200px] md:max-w-[25%] bg-primary-green text-white p-5 text-center transition-all hover:-translate-y-1 hover:bg-primary-yellow hover:text-text-dark rounded-xl md:rounded-none animate-from-bottom"
-            style={{ "--animation-delay": "0.1s" }}
-          >
-            <img
-              src={kagetIcon}
-              alt="Kucing Kaget"
-              className="w-16 h-16 object-cover mb-2 mx-auto"
-            />
-            <h3 className="text-lg md:text-2lg m-0 text-white hover:text-text-dark">
-              Gratis 100% Refund
-            </h3>
-          </div>
-          {/* Mapping Card 3 */}
-          <div
-            ref={addAnimatedRef}
-            className="pet-card flex-1 min-w-[200px] md:max-w-[25%] bg-primary-green text-white p-5 text-center transition-all hover:-translate-y-1 hover:bg-primary-yellow hover:text-text-dark rounded-xl md:rounded-none animate-from-bottom"
-            style={{ "--animation-delay": "0.2s" }}
-          >
-            <img
-              src={aboutUs2Icon}
-              alt="Kucing Keren"
-              className="w-16 h-16 object-cover mb-2 mx-auto"
-            />
-            <h3 className="text-lg md:text-2lg m-0 text-white hover:text-text-dark">
-              Produk Berizin Kementan
-            </h3>
-          </div>
-          {/* Mapping Card 4 */}
-          <div
-            ref={addAnimatedRef}
-            className="pet-card flex-1 min-w-[200px] md:max-w-[25%] bg-primary-green text-white p-5 text-center transition-all hover:-translate-y-1 hover:bg-primary-yellow hover:text-text-dark rounded-xl md:rounded-l-none md:rounded-r-[25px] animate-from-bottom"
-            style={{ "--animation-delay": "0.3s" }}
-          >
-            <img
-              src={visiMisiIcon}
-              alt="Kucing Stories"
-              className="w-[73px] h-16 object-cover mb-2 mx-auto"
-            />
-            <h3 className="text-lg md:text-2lg m-0 text-white hover:text-text-dark">
-              Rekomendasi&nbsp;Dokter&nbsp;Hewan
-            </h3>
           </div>
         </section>
 
@@ -179,15 +134,34 @@ const HomePage = () => {
               className="productinfo-header animate-from-bottom"
             >
               <h2 className="text-4xl md:text-5xl text-text-dark mb-4">
-                Solusi Terbaik untuk Kesehatan Anabul Anda
+                Solusi Terpercaya untuk Kesehatan dan Perawatan Anabul Anda
               </h2>
               <p className="text-xl md:text-2xl text-text-dark max-w-4xl mx-auto opacity-80">
-                Jelajahi pilihan produk inovatif kami yang dirancang khusus
-                untuk memenuhi kebutuhan unik kucing Anda.
+                Temukan produk inovatif Holycat yang dirancang khusus untuk
+                memenuhi kebutuhan anabul anda.
               </p>
             </div>
 
             <div className="productinfo-grid flex flex-wrap justify-center gap-8 md:gap-10 mt-12">
+              <div
+                ref={addAnimatedRef}
+                className="productinfo-card flex-1 min-w-[300px] max-w-md bg-white p-8 rounded-xl shadow-lg transition-all border-2 border-transparent hover:-translate-y-2 hover:shadow-xl hover:border-primary-green animate-from-bottom"
+                style={{ "--animation-delay": "0.3s" }}
+              >
+                <div className="icon-circle primary-yellow-bg w-20 h-20 rounded-full mx-auto mb-5 flex items-center justify-center">
+                  <img
+                    src={obatPencernaanIcon}
+                    alt="Obat Pencernaan icon"
+                    className="w-full rounded-full object-cover"
+                  />
+                </div>
+                <h3 className="text-3xl text-text-dark my-4">Obat</h3>
+                <p>
+                  Diformulasikan dan sudah teruji laboratorium dengan
+                  pendampingan dokter hewan — efektif, aman, dan terpercaya
+                  untuk menjaga kesehatan anabul mu
+                </p>
+              </div>{" "}
               <div
                 ref={addAnimatedRef}
                 className="productinfo-card flex-1 min-w-[300px] max-w-md bg-white p-8 rounded-xl shadow-lg transition-all border-2 border-transparent hover:-translate-y-2 hover:shadow-xl hover:border-primary-green animate-from-bottom"
@@ -204,22 +178,6 @@ const HomePage = () => {
                   Suplemen & Vitamin
                 </h3>
               </div>
-
-              <div
-                ref={addAnimatedRef}
-                className="productinfo-card flex-1 min-w-[300px] max-w-md bg-white p-8 rounded-xl shadow-lg transition-all border-2 border-transparent hover:-translate-y-2 hover:shadow-xl hover:border-primary-green animate-from-bottom"
-                style={{ "--animation-delay": "0.3s" }}
-              >
-                <div className="icon-circle primary-yellow-bg w-20 h-20 rounded-full mx-auto mb-5 flex items-center justify-center">
-                  <img
-                    src={obatPencernaanIcon}
-                    alt="Obat Pencernaan icon"
-                    className="w-full rounded-full object-cover"
-                  />
-                </div>
-                <h3 className="text-3xl text-text-dark my-4">Obat</h3>
-              </div>
-
               <div
                 ref={addAnimatedRef}
                 className="productinfo-card flex-1 min-w-[300px] max-w-md bg-white p-8 rounded-xl shadow-lg transition-all border-2 border-transparent hover:-translate-y-2 hover:shadow-xl hover:border-primary-green animate-from-bottom"
