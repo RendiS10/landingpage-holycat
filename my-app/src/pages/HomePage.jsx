@@ -18,6 +18,13 @@ import avatarDuduk from "../../public/images/duduk.png";
 import avatarKetawa from "../../public/images/ketawa.png";
 import avatarLove from "../../public/images/love.png";
 import achivment from "../../public/images/achivment.png";
+import bintang from "../../public/images/bintang.png";
+import keranjang from "../../public/images/keranjang.png";
+import orang from "../../public/images/Group 7.png";
+import jam from "../../public/images/Group 6.png";
+import scan from "../../public/images/Group 4.png";
+import uangsobek from "../../public/images/Group 5.png";
+import qr from "../../public/images/qr.png";
 
 // Import untuk section Tentang Holycat
 import holycatLabsImage from "../../public/images/aboutus.png";
@@ -285,12 +292,15 @@ const HomePage = () => {
                 {/* Rating dan Tombol */}
                 <div className="flex justify-between items-center mt-auto">
                   <div className="flex items-center gap-1 text-yellow-500 font-bold">
-                    <span>⭐</span>
-                    <span className="text-gray-800">4,8</span>
+                    <img src={bintang} alt="" />
+                    <span className="text-2xl">4,8</span>
                   </div>
-                  <button className="bg-yellow-400 text-white p-2 rounded-full hover:bg-yellow-500 transition">
-                    🛒
-                  </button>
+                  <a
+                    href="#"
+                    className="bg-[#FFBF00] text-white p-2 rounded-full hover:bg-yellow-500 transition w-[50px] h-[45px]"
+                  >
+                    <img src={keranjang} alt="" />
+                  </a>
                 </div>
               </div>
             ))}
@@ -305,14 +315,342 @@ const HomePage = () => {
 
             {/* Teks Deskripsi */}
             <div className="text-left max-w-lg">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+              <h3 className="text-4xl md:text-5xl font-bold text-white mb-2">
                 Sudah Berizin Kementan
               </h3>
-              <p className="text-white text-base md:text-lg">
+              <p className="text-white text-base md:text-xl">
                 Langkah kecil untuk kami, tapi besar untuk kepercayaanmu. Kini,
                 seluruh produk Holycat telah resmi terdaftar dan berizin
                 Kementan.
               </p>
+            </div>
+          </div>
+        </section>
+        {/* === KONSULTASI SECTION (UPDATED) === */}
+        <section className="bg-[#FFFF] py-16 md:py-20 px-6 md:px-16">
+          <div className="container mx-auto max-w-5xl">
+            {/* Wrapper utama dengan Flexbox untuk layout kiri-kanan di desktop */}
+            <div className="flex flex-col md:flex-row items-center justify-between gap-10 mb-12">
+              {/* Kolom Kiri: Teks */}
+              <div
+                ref={addAnimatedRef}
+                className="flex-1 animate-from-left md:text-left text-center"
+              >
+                <h2 className="text-6xl md:text-6xl font-extrabold text-gray-800 leading-tight">
+                  Gratis Konsultasi Kesehatan Kucing <br />
+                  <span className="inline-block bg-[#FFBF00] text-[#FFFF] text-6xl font-bold px-6 py-1 rounded-lg mt-4 mb-6">
+                    24 Jam
+                  </span>
+                </h2>
+
+                <p className="max-w-md text-2xl md:mx-0 mx-auto">
+                  <strong>
+                    Komitmen Holycat adalah menjadi solusi yang tepat untuk
+                    menjadikan kucing sehat dan itu kami buktikan dengan
+                    kemudahan mengakses konsultasi bersama dokter hewan.
+                  </strong>
+                </p>
+              </div>
+
+              {/* Kolom Kanan: Grid Keunggulan */}
+              <div ref={addAnimatedRef} className="flex-1 animate-from-right">
+                <div className="grid grid-cols-2 gap-4">
+                  {/* Item 1: Tim Ahli */}
+                  <img
+                    src={orang}
+                    className="h-187 w-193 mb-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  />
+                  {/* Item 2: 24/7 */}
+                  <img
+                    src={jam}
+                    className="h-187 w-193 mb-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  />
+                  {/* Item 3: Akses Mudah */}
+                  <img
+                    src={scan}
+                    className="h-187 w-193 mb-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  />
+                  {/* Item 4: 100% Gratis */}
+                  <img
+                    src={uangsobek}
+                    className="h-187 w-193 mb-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Bagian Bawah: Cara Konsultasi */}
+            <div
+              ref={addAnimatedRef}
+              className="bg-[#FFBF00] max-w-full p-6 md:p-8 rounded-[42px] flex items-center justify-center animate-from-bottom mx-auto"
+              style={{ "--animation-delay": "0.4s" }}
+            >
+              <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 w-full">
+                <div className="w-[150px] h-[150px] md:w-[193px] md:h-[187px] flex-shrink-0">
+                  <img
+                    src={qr}
+                    alt="QR Code Konsultasi"
+                    className="w-full h-full bg-[#44AF7C] p-2 rounded-[25px]"
+                  />
+                </div>
+                <div className="text-white text-center md:text-left">
+                  <h2 className="text-2xl md:text-4xl font-extrabold mb-3">
+                    Cara Konsultasi:
+                  </h2>
+                  <ol className="list-decimal list-inside space-y-2 text-lg md:text-2xl font-bold">
+                    <li>Scan QR Code di samping atau di kemasan produk</li>
+                    <li>Terhubung langsung dengan tim Holycat via WhatsApp</li>
+                    <li>Ceritakan kondisi kucing kamu</li>
+                    <li>Dapatkan saran dan solusi dari ahlinya</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* === KATA MEREKA TENTANG HOLYCAT (TESTIMONIAL) === */}
+        <section className="bg-[#44AF7C] py-16 md:py-20 px-6 md:px-16">
+          <div className="container mx-auto max-w-6xl">
+            <h2
+              ref={addAnimatedRef}
+              className="text-4xl md:text-5xl font-bold text-white text-center mb-4 animate-from-bottom"
+            >
+              Kata Mereka Tentang Holycat
+            </h2>
+            <p
+              ref={addAnimatedRef}
+              className="text-white text-center text-lg md:text-xl mb-12 animate-from-bottom"
+              style={{ "--animation-delay": "0.1s" }}
+            >
+              Ratusan pemilik kucing telah mempercayakan kesehatan anabulnya
+              kepada kami.
+            </p>
+
+            {/* Grid Testimonial */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Testimonial 1 */}
+              <div
+                ref={addAnimatedRef}
+                className="bg-white rounded-3xl p-6 shadow-lg animate-from-bottom"
+                style={{ "--animation-delay": "0.2s" }}
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-16 h-16 bg-gray-300 rounded-full flex-shrink-0"></div>
+                  <div>
+                    <div className="flex text-yellow-400 mb-1">
+                      {"★★★★★".split("").map((star, i) => (
+                        <span key={i}>{star}</span>
+                      ))}
+                    </div>
+                    <p className="font-bold text-gray-800">Bambang Wijaya</p>
+                    <p className="text-sm text-gray-500">
+                      Pemilik kucing anggora
+                    </p>
+                  </div>
+                </div>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Holycat adalah penyelamat! Kucing saya sakit, saya langsung
+                  konsultasi. Dalam 10 menit saja, respon langsung.
+                  Penanganannya juga jelas. Pelayanan konsultasi dokter hewan
+                  juga sangat membantu.
+                </p>
+              </div>
+
+              {/* Testimonial 2 - Highlighted */}
+              <div
+                ref={addAnimatedRef}
+                className="bg-[#FFBF00] rounded-3xl p-6 shadow-lg animate-from-bottom"
+                style={{ "--animation-delay": "0.3s" }}
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-16 h-16 bg-gray-300 rounded-full flex-shrink-0"></div>
+                  <div>
+                    <div className="flex text-yellow-400 mb-1">
+                      {"★★★★★".split("").map((star, i) => (
+                        <span key={i}>{star}</span>
+                      ))}
+                    </div>
+                    <p className="font-bold text-gray-800">Bambang Wijaya</p>
+                    <p className="text-sm text-gray-500">
+                      Pemilik kucing anggora
+                    </p>
+                  </div>
+                </div>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Holycat adalah penyelamat! Kucing saya sakit, saya langsung
+                  konsultasi. Dalam 10 menit saja, respon langsung.
+                  Penanganannya juga jelas. Pelayanan konsultasi dokter hewan
+                  juga sangat membantu.
+                </p>
+              </div>
+
+              {/* Testimonial 3 */}
+              <div
+                ref={addAnimatedRef}
+                className="bg-white rounded-3xl p-6 shadow-lg animate-from-bottom"
+                style={{ "--animation-delay": "0.4s" }}
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-16 h-16 bg-gray-300 rounded-full flex-shrink-0"></div>
+                  <div>
+                    <div className="flex text-yellow-400 mb-1">
+                      {"★★★★★".split("").map((star, i) => (
+                        <span key={i}>{star}</span>
+                      ))}
+                    </div>
+                    <p className="font-bold text-gray-800">Bambang Wijaya</p>
+                    <p className="text-sm text-gray-500">
+                      Pemilik kucing anggora
+                    </p>
+                  </div>
+                </div>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Holycat adalah penyelamat! Kucing saya sakit, saya langsung
+                  konsultasi. Dalam 10 menit saja, respon langsung.
+                  Penanganannya juga jelas. Pelayanan konsultasi dokter hewan
+                  juga sangat membantu.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* === GARANSI REFUND 100% === */}
+        <section className="bg-white py-16 md:py-20 px-6 md:px-16">
+          <div className="container mx-auto max-w-6xl">
+            <h2
+              ref={addAnimatedRef}
+              className="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-4 animate-from-bottom"
+            >
+              Garansi Refund 100%
+            </h2>
+            <p
+              ref={addAnimatedRef}
+              className="text-gray-600 text-center text-lg mb-12 animate-from-bottom"
+              style={{ "--animation-delay": "0.1s" }}
+            >
+              Kami Memberikan Garansi Uang Kembali untuk:
+            </p>
+
+            {/* Grid Garansi */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Card 1 - Produk Rusak */}
+              <div
+                ref={addAnimatedRef}
+                className="border-4 border-gray-800 rounded-3xl p-8 text-center animate-from-bottom"
+                style={{ "--animation-delay": "0.2s" }}
+              >
+                <div className="w-24 h-24 mx-auto mb-6 flex items-center justify-center">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    className="w-full h-full"
+                  >
+                    <path
+                      d="M20 7L12 3L4 7M20 7L12 11M20 7V17L12 21M12 11L4 7M12 11V21M4 7V17L12 21"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">
+                  Produk Rusak
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Produk yang diterima rusak atau tidak sesuai pesanan.
+                </p>
+              </div>
+
+              {/* Card 2 - Produk Tidak Sesuai (Highlighted) */}
+              <div
+                ref={addAnimatedRef}
+                className="bg-[#44AF7C] rounded-3xl p-8 text-center shadow-lg animate-from-bottom"
+                style={{ "--animation-delay": "0.3s" }}
+              >
+                <div className="w-24 h-24 mx-auto mb-6 flex items-center justify-center text-white">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    className="w-full h-full"
+                  >
+                    <path
+                      d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <line
+                      x1="12"
+                      y1="3"
+                      x2="12"
+                      y2="21"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    />
+                    <line
+                      x1="3"
+                      y1="12"
+                      x2="21"
+                      y2="12"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2">
+                  Produk Tidak Sesuai
+                </h3>
+                <p className="text-white text-sm">
+                  Produk yang diterim tidak sesuai dengan pesanan.
+                </p>
+              </div>
+
+              {/* Card 3 - Produk Tidak Lengkap */}
+              <div
+                ref={addAnimatedRef}
+                className="border-4 border-gray-800 rounded-3xl p-8 text-center animate-from-bottom"
+                style={{ "--animation-delay": "0.4s" }}
+              >
+                <div className="w-24 h-24 mx-auto mb-6 flex items-center justify-center">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    className="w-full h-full"
+                  >
+                    <path
+                      d="M20 7L12 3L4 7M20 7L12 11M20 7V17L12 21M12 11L4 7M12 11V21M4 7V17L12 21"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">
+                  Produk Tidak Lengkap
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Produk diterima tidak sesuai dengan kode pesanan.
+                </p>
+              </div>
             </div>
           </div>
         </section>
