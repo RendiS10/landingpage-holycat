@@ -25,6 +25,9 @@ import jam from "../../public/images/Group 6.png";
 import scan from "../../public/images/Group 4.png";
 import uangsobek from "../../public/images/Group 5.png";
 import qr from "../../public/images/qr.png";
+import Union1 from "../../public/images/Union1.svg";
+import Union2 from "../../public/images/Union2.svg";
+import Union3 from "../../public/images/Union3.svg";
 
 // Import untuk section Tentang Holycat
 import holycatLabsImage from "../../public/images/aboutus.png";
@@ -320,8 +323,7 @@ const HomePage = () => {
               </h3>
               <p className="text-white text-base md:text-xl">
                 Langkah kecil untuk kami, tapi besar untuk kepercayaanmu. Kini,
-                seluruh produk Holycat telah resmi terdaftar dan berizin
-                Kementan.
+                produk Holycat telah resmi terdaftar dan berizin Kementan.
               </p>
             </div>
           </div>
@@ -417,6 +419,7 @@ const HomePage = () => {
           </div>
         </section>
         {/* === KATA MEREKA TENTANG HOLYCAT (TESTIMONIAL) === */}
+        {/* === KATA MEREKA TENTANG HOLYCAT (TESTIMONIAL) === */}
         <section className="bg-[#44AF7C] py-16 md:py-20 px-6 md:px-16">
           <div className="container mx-auto max-w-6xl">
             <h2
@@ -439,7 +442,7 @@ const HomePage = () => {
               {/* Testimonial 1 */}
               <div
                 ref={addAnimatedRef}
-                className="bg-white rounded-3xl p-6 shadow-lg animate-from-bottom"
+                className="bg-white rounded-3xl p-6 shadow-lg animate-from-bottom transition-all duration-300 hover:bg-[#FFBF00] hover:scale-105 hover:shadow-2xl cursor-pointer"
                 style={{ "--animation-delay": "0.2s" }}
               >
                 <div className="flex items-center gap-3 mb-4">
@@ -464,10 +467,10 @@ const HomePage = () => {
                 </p>
               </div>
 
-              {/* Testimonial 2 - Highlighted */}
+              {/* Testimonial 2 */}
               <div
                 ref={addAnimatedRef}
-                className="bg-[#FFBF00] rounded-3xl p-6 shadow-lg animate-from-bottom"
+                className="bg-white rounded-3xl p-6 shadow-lg animate-from-bottom transition-all duration-300 hover:bg-[#FFBF00] hover:scale-105 hover:shadow-2xl cursor-pointer"
                 style={{ "--animation-delay": "0.3s" }}
               >
                 <div className="flex items-center gap-3 mb-4">
@@ -495,7 +498,7 @@ const HomePage = () => {
               {/* Testimonial 3 */}
               <div
                 ref={addAnimatedRef}
-                className="bg-white rounded-3xl p-6 shadow-lg animate-from-bottom"
+                className="bg-white rounded-3xl p-6 shadow-lg animate-from-bottom transition-all duration-300 hover:bg-[#FFBF00] hover:scale-105 hover:shadow-2xl cursor-pointer"
                 style={{ "--animation-delay": "0.4s" }}
               >
                 <div className="flex items-center gap-3 mb-4">
@@ -524,6 +527,7 @@ const HomePage = () => {
         </section>
 
         {/* === GARANSI REFUND 100% === */}
+
         <section className="bg-white py-16 md:py-20 px-6 md:px-16">
           <div className="container mx-auto max-w-6xl">
             <h2
@@ -534,7 +538,7 @@ const HomePage = () => {
             </h2>
             <p
               ref={addAnimatedRef}
-              className="text-gray-600 text-center text-lg mb-12 animate-from-bottom"
+              className="text-gray-800 text-center font-bold text-2xl mb-12 animate-from-bottom is-visible"
               style={{ "--animation-delay": "0.1s" }}
             >
               Kami Memberikan Garansi Uang Kembali untuk:
@@ -545,110 +549,71 @@ const HomePage = () => {
               {/* Card 1 - Produk Rusak */}
               <div
                 ref={addAnimatedRef}
-                className="border-4 border-gray-800 rounded-3xl p-8 text-center animate-from-bottom"
+                className="group text-gray-800 border-4 border-gray-800 rounded-3xl p-8 text-center animate-from-bottom animate-from-bottom transition-all duration-300 hover:bg-[#44AF7C] hover:scale-105 hover:shadow-2xl cursor-pointer is-visible hover:border-[#44AF7C] hover:text-white"
                 style={{ "--animation-delay": "0.2s" }}
               >
                 <div className="w-24 h-24 mx-auto mb-6 flex items-center justify-center">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    className="w-full h-full"
-                  >
-                    <path
-                      d="M20 7L12 3L4 7M20 7L12 11M20 7V17L12 21M12 11L4 7M12 11V21M4 7V17L12 21"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                  <img
+                    src={Union1} // <-- GANTI DENGAN PATH SVG ANDA
+                    alt="Ikon Garansi" // <-- Teks alternatif yang deskriptif
+                    className="w-full h-full object-contain"
+                  />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">
+
+                <h3 className="text-xl font-bold mb-2 group-hover:text-white">
                   Produk Rusak
                 </h3>
-                <p className="text-gray-600 text-sm">
-                  Produk yang diterima rusak atau tidak sesuai pesanan.
+
+                <p className="text-xl font-bold mb-2 group-hover:text-white">
+                  Produk yang diterima rusak saat pengiriman.
                 </p>
               </div>
 
               {/* Card 2 - Produk Tidak Sesuai (Highlighted) */}
               <div
                 ref={addAnimatedRef}
-                className="bg-[#44AF7C] rounded-3xl p-8 text-center shadow-lg animate-from-bottom"
-                style={{ "--animation-delay": "0.3s" }}
+                className="group text-gray-800 border-4 border-gray-800 rounded-3xl p-8 text-center animate-from-bottom animate-from-bottom transition-all duration-300 hover:bg-[#44AF7C] hover:scale-105 hover:shadow-2xl cursor-pointer is-visible hover:border-[#44AF7C] hover:text-white"
+                style={{ "--animation-delay": "0.2s" }}
               >
-                <div className="w-24 h-24 mx-auto mb-6 flex items-center justify-center text-white">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    className="w-full h-full"
-                  >
+                <div class="w-24 h-24 mx-auto mb-6 flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" fill="none" class="w-full h-full">
                     <path
-                      d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                      d="M20 7L12 3L4 7M20 7L12 11M20 7V17L12 21M12 11L4 7M12 11V21M4 7V17L12 21"
                       stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <line
-                      x1="12"
-                      y1="3"
-                      x2="12"
-                      y2="21"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    />
-                    <line
-                      x1="3"
-                      y1="12"
-                      x2="21"
-                      y2="12"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    />
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">
+                <h3 className="text-xl font-bold mb-2 group-hover:text-white">
                   Produk Tidak Sesuai
                 </h3>
-                <p className="text-white text-sm">
-                  Produk yang diterim tidak sesuai dengan pesanan.
+                <p className="text-xl font-bold mb-2 group-hover:text-white">
+                  Produk yang dikirim tidak sesuai pesanan.
                 </p>
               </div>
 
               {/* Card 3 - Produk Tidak Lengkap */}
               <div
                 ref={addAnimatedRef}
-                className="border-4 border-gray-800 rounded-3xl p-8 text-center animate-from-bottom"
-                style={{ "--animation-delay": "0.4s" }}
+                className="group text-gray-800 border-4 border-gray-800 rounded-3xl p-8 text-center animate-from-bottom animate-from-bottom transition-all duration-300 hover:bg-[#44AF7C] hover:scale-105 hover:shadow-2xl cursor-pointer is-visible hover:border-[#44AF7C] hover:text-white"
+                style={{ "--animation-delay": "0.2s" }}
               >
                 <div className="w-24 h-24 mx-auto mb-6 flex items-center justify-center">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    className="w-full h-full"
-                  >
-                    <path
-                      d="M20 7L12 3L4 7M20 7L12 11M20 7V17L12 21M12 11L4 7M12 11V21M4 7V17L12 21"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
+                  <div className="w-24 h-24 mx-auto mb-6 flex items-center justify-center">
+                    <img
+                      src={Union3} // <-- GANTI DENGAN PATH SVG ANDA
+                      alt="Ikon Garansi" // <-- Teks alternatif yang deskriptif
+                      className="w-full h-full object-contain"
                     />
-                  </svg>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">
+                <h3 className="text-xl font-bold mb-2 group-hover:text-white">
                   Produk Tidak Lengkap
                 </h3>
-                <p className="text-gray-600 text-sm">
-                  Produk diterima tidak sesuai dengan kode pesanan.
+                <p className="text-xl font-bold mb-2 group-hover:text-white">
+                  Produk diterima dalam kondisi tidak lengkap
                 </p>
               </div>
             </div>
